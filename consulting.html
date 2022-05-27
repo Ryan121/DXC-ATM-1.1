@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Homepage - Consulting</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://kit.fontawesome.com/6584fe6fb3.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="alertify.min.css"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body onLoad="timeRefresh(72000000);">
+<section>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="DXC Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Technical</a></li>
+                <li><a href="./MLOps.html">MLOps+</a></li>
+                <li><a href="./data_engineering.html">Data Engineering+</a></li>
+                <li><a href="./consulting.html">Consulting</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Update other Information</button>
+                    <div class="dropdown-content">
+                        <li><a href="update.html" target="_blank"> Personal Information</a></li>
+                        <li><a href="shadowing.html" target="_blank">Shadowing Work</a></li>
+                        <li><a href="fulltime.html" target="_blank">Full-Time Work</a></li>
+                        <li><a href="skills.html" target="_blank">My Skills</a></li>
+                        <li><a href="training.html" target="_blank">My Training</a></li>
+                    </div>
+                </div>
+
+                <li><a href="./faq.html" target="_blank">FAQ</a></li>
+                <li><a href="https://github.dxc.com/ajha62/DXC-Analytics-Bootcamp-Training" target="_blank">Contribute</a></li>
+                <!-- <li><a href="./adminlogin.html">Admin</a></li> -->
+            </ul>
+        </nav>
+        <div class="menu">
+            <a href="#" class="menu-trigger">Menu</a>
+        </div>
+    </header>
+    <p>
+        &nbsp;
+    </p>
+    <p>
+        &nbsp;
+    </p>
+</section>
+<div class="grid-container">
+    <div class="relative">
+        <h2 class="para animate__animated animate__backInLeft"><b>Your Details</b></h2>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-user-graduate" style="color: #339af0;"></i> Welcome: <span id="welcometext"></span></p>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-id-card-alt" style="color: #339af0;"></i> Employee ID:<span id="registeredid"></span><span style="padding-left:10px"> <button onclick="copythis()">Copy to clipboard</button></span>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-calendar-day" style="color: #339af0;"></i> Bootcamp Started On: <span id="registereddate"></span> </p>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-graduation-cap" style="color: #339af0;"></i> Degree: <span id="registereddegree"></span> </p>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-briefcase" style="color: #339af0;"></i> Work Status: <span id="registeredstatus"></span></p>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-envelope" style="color: #339af0;"></i> Registered Email: <span id="registeredemail"></span></p>
+	<a href="essentials.html" target="_blank"><button class="button button5 space animate__animated animate__lightSpeedInRight"><b>Update weekly information.</b></button></a>
+    </div>
+    <div>
+        <p class="para"> <div style="text-align: center; color: red"><b class=""> New User: <i class=""></i> </b></div><br> <ul>
+        <li class="para">Ensure you are logged in to Microsoft (use the button below to log-in to Microsoft).</li>
+        <li class="para">Ensure <b>Your details</b> are filled properly, and no fields are left behind. You can use the <b>Reset Your Details</b> button for this.</li>
+        <li class="para">YOU MUST check off the <b>Bootcamp Modules</b> you have completed, then click <b>Send your weekly update</b> before updating any other data.</li>
+        <li class="para">Complete all forms in the <b>Update your Information</b> drop-down menu above.</li>
+    </ul></p>
+    </div>
+    <div>
+        <p class="para"> <div style="text-align: center; color: green"><b class=""> Returning User: <i class=""></i> </b></div><br> <ul>
+        <li class="para">Ensure you are logged in to Microsoft (use the button below to log-in to Microsoft).</li>
+        <li class="para">Ensure <b>Your details</b> are visible on the portal and are correct. You can use the <b>Reset Your Details</b> button to update these details.</li>
+        <li class="para">You only need to send your weekly update if your bootcamp progress has changed since last week.</li>
+        <li class="para">Update any forms in the <b>Update your Information</b> drop-down menu where any data on that form has changed</li>
+    </ul></p>
+    </div>
+    <div class="progress-pie-chart">
+        <div class="ppc-progress">
+            <div class="ppc-progress-fill"></div>
+        </div>
+        <div class="ppc-percents">
+            <div class="pcc-percents-wrapper">
+                <span>%</span>
+                <p class="p1 animate__animated animate__flash">Of Total Modules Completed</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>
+	&nbsp;
+</p>
+<br>
+<div class="highlight">
+<p>
+  <h2>Last Updated on 04/02/2022 - Key Changes & Instructions</h2>
+  </p>
+<br>
+<ul>
+  <li>Certification Tracker added - Please check the boxes of the certifications (on the Technical page) you have completed 
+    and upload proof of certification via the gold 'Submit a certification certificate' button seen below.</li>
+  <br>
+  <li>A bootcamp update email prompt has been added - An email has been scheduled to be sent daily 
+    to users who have not sent an update email for more than 7 days if they have not yet completed the bootcamp. 
+  </li>
+  <br>
+</ul>
+</div>
+
+<p>
+  &nbsp;
+</p>
+<div style="text-align: center">
+
+<button class="submit button button5 animate__animated animate__lightSpeedInRight" onclick="sendMail('Technical')">Send your bootcamp update.</button>
+
+<a href="https://forms.office.com/r/g443E4FntF" target="_blank"><button class="cert_button submit button button5 space animate__animated animate__lightSpeedInRight">Submit a certification certificate.</button></a>
+
+<a href="https://login.microsoftonline.com" target="_blank"><button class="button button5 space animate__animated animate__lightSpeedInRight">Login to Microsoft.</button></a>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="popup()">Reset Your Details.</button>
+</div>
+
+<!--
+<button class="submit button button5 animate__animated animate__lightSpeedInRight" onclick="sendMail()">Send your weekly update.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick()">Reset your name and email.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClickEmp()">Reset your employee ID.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick2()">Reset your working status.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick3()">Reset your starting date and degree.</button>
+
+-->
+<p>
+    &nbsp;
+</p>
+
+<h1 class="para"><b>BOOTCAMP MODULES (Consulting)</b></h1>
+<p>
+    &nbsp;
+</p>
+<div class="checkbox">
+    <p>
+        <strong>Week 1</strong>
+    </p>
+
+    <div id="checks">
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB1" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB1">&nbsp;</label></td><td><b>Introduction to Analytics:</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvQ2xvdW1wdXRpYXRpb24vTWljcm9zb2Z0L2NsX21zYXo._fcpathe_#summary/COURSES/CDE$615410:_ss_cca:bs_dgt61_a01_enus" target="_blank">Basic Analytical Methods (29 min.)</a></td></tr>
+        <tr><td><input name="Course" id="CB2" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB2">&nbsp;</label></td><td><b>Introduction to Analytics:</b></td>  <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/shared;spf-url=common%2Fleclassdetail%2Fregdw000000006020318%3Fcontext%3Duser&learnerId%3Demplo000000000919192&returnPage%3DMyPlan&tab%3D2" target="_blank">Data Analysis Concepts (1:40 min.)</a></td></tr>
+        <tr><td><input name="Course" id="CB3" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB3">&nbsp;</label></td><td><b>Datawarehouse Concepts</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvQ2xvdW1wdXRpYXRpb24vTWljcm9zb2Z0L2NsX21zYXo._fcpathe_#summary/COURSES/CDE$554277:_ss_cca:it_dfdwes_01_enus" target="_blank">Data Warehouse Essential:Concepts (1hs44min):</a></td></tr>
+        <tr><td><input name="Course" id="CB4" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB4">&nbsp;</label></td><td><b>Database Fundamentals & SQL Overview</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#browse/1eab15b0-b5bc-431f-ac97-da1414875296" target="_blank">Database Fundamentals (2 assets, 3h19min+2h38min) :</a></td></tr>
+        <tr><td><input name="Course" id="CB5" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB5">&nbsp;</label></td><td><b>Database Fundamentals & SQL Overview</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#summary/COURSES/CDE$494327:_ss_cca:df_gdfu_a02_it_enus" target="_blank">Generics Data Base Fundamentals (2 assests, 3h14min+3h34min):</a></td></tr>
+        <tr><td><input name="Course" id="CB6" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB6">&nbsp;</label></td><td><b>Database Fundamentals & SQL Overview</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#summary/COURSES/CDE$494298:_ss_cca:df_gdfu_a01_it_enus" target="_blank">Generic Database Fundamentals: Architecture and Normalization Concepts</a></td></tr>
+        <tr><td><input name="Course" id="CB7" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB7">&nbsp;</label></td><td><b>Database Fundamentals & SQL Overview</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbi9kZl9kYmZ1_fcpathe_#summary/COURSES/CDE$487476:_ss_cca:df_sqli_a01_it_enus" target="_blank">Introduction to SQL</a></td></tr>
+        </table>
+        <p>
+            &nbsp;
+        </p>
+        <strong>Week 2</strong><br>
+        <p>
+            &nbsp;
+        </p>
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB13" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB13">&nbsp;</label></td><td><b>Introduction to ETL</b></td>  <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/shared;spf-url=common%2Fleclassdetail%2Fregdw000000006069014%3Fcontext%3Duser&learnerId%3Demplo000000000919192&returnPage%3DMyPlan&tab%3D2" target="_blank">Data Flow Implementation (1h6min):</a></td></tr>
+        <tr><td><input name="Course" id="CB14" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB14">&nbsp;</label></td><td><b>Introduction to ETL</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$568886:_ss_cca:it_dsdslsdj_03_enus" target="_blank">Data Silos, Lakes, & Streams: Sources, Visualizations, & ETL Operations -1h29min:</a></td></tr>
+        <tr><td><input name="Course" id="CB15" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB15">&nbsp;</label></td><td><b>Introduction to Cloud Computing & Azure Fundamentals</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$472964:_ss_cca:cl_cctf_a04_it_enus" target="_blank">Cloud Computing Fundamentals: Migrating to the Cloud (1h6min): </a></td></tr>
+        <tr><td><input name="Course" id="CB146" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB146">&nbsp;</label></td><td><b>Azure Fundamentals</b></td><td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000214184?returnurl=common%2Fsearchresults%2FMicrosoft%20Azure%20Fundamentals%2FALL" target="_blank">Azure Fundamentals (AZ 900) 4 course, 2hsx4</a></td></tr>
+        <tr><td><input name="Course" id="CB148" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB148">&nbsp;</label></td><td><b>Introduction to Devops and Docket/container</b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$466692:_ss_cca:os_devo_a01_it_enus" target="_blank">DevOps Fundamentals: Tools, Technologies, and Infrastructures (1h56min):</a></td></tr>
+        <tr><td><input name="Course" id="CB149" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB149">&nbsp;</label></td><td><b>Introduction to Devops and Docket/container</b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$616466:_ss_cca:it_dodkaddj_01_enus" target="_blank">DevOps with Docker: Container Management (53min):</a></td></tr>
+        <tr><td><input name="Course" id="CB150" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB150">&nbsp;</label></td><td><b>Introduction to Bigdata and Hadoop, map-reduce</b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$565711:_ss_cca:it_dshpfddj_01_enus" target="_blank">Getting Started with Hadoop: Fundamentals & MapReduce (1h4min): </a></td></tr>
+        </table>
+
+        <p>
+            &nbsp;
+        </p>
+        <strong>Week 3</strong><br>
+        <p>
+            &nbsp;
+        </p>
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB151" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB151">&nbsp;</label></td><td><b>Business Analytics Role Skill </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/shared;spf-url=common%2Flearningeventdetail%2Fcurra000000000003280%3Freturnurl%3Dcommon%2Fsearchresults%2Fbusiness%20analysis%20curriculum%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY%3FembeddedInTorque%3Dtrue" target="_blank">Business Analysis Curriculum (17hs):</a></td></tr>
+        <tr><td><input name="Course" id="CB152" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB152">&nbsp;</label></td><td><b>Business Analytics Role Skill </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000182226?returnurl=common%2Fsearchresults%2FBusiness%20Analysis%20Overview%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">Business Analysis Overview (1h)</a></td></tr>
+        <tr><td><input name="Course" id="CB153" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB153">&nbsp;</label></td><td><b>Business Analytics Role Skill </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000184282?returnurl=common%2Fsearchresults%2FThe%20BA%20Planning%20and%20Monitoring%20Knowledge%20Area%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">The BA Planning and Monitoring Knowledge Area (1h38min)</a></td></tr>
+        <tr><td><input name="Course" id="CB154" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB154">&nbsp;</label></td><td><b>Business Analytics Role Skill </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000184283?returnurl=common%2Fsearchresults%2FThe%20BA%20Elicitation%20and%20Collaboration%20Knowledge%20Area%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">The BA Elicitation and Collaboration Knowledge Area (1h31min)</a></td></tr>
+        <tr><td><input name="Course" id="CB155" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB155">&nbsp;</label></td><td><b>Business Analytics Role Skill (Continued) </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000179118?returnurl=common%2Fsearchresults%2FThe%20Requirements%20Life%20Cycle%20Management%20Knowledge%20Area%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">The Requirements Life Cycle Management Knowledge Area (1h)</a></td></tr>
+        <tr><td><input name="Course" id="CB156" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB156">&nbsp;</label></td><td><b>Business Analytics Role Skill (Continued) </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000182593?regId=regdw000000005612873&returnurl=common%2Fsearchresults%2FThe%20Strategy%20Analysis%20Knowledge%20Area%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">The Strategy Analysis Knowledge Area (1h4min)</a></td></tr>
+        <tr><td><input name="Course" id="CB157" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB157">&nbsp;</label></td><td><b>Business Analytics Role Skill (Continued) </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000182227?returnurl=common%2Fsearchresults%2FRADD%20Knowledge%20Area:%20Part%201%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">RADD Knowledge Area: Part 1 (46min)</a></td></tr>
+        <tr><td><input name="Course" id="CB158" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB158">&nbsp;</label></td><td><b>Business Analytics Role Skill (Continued) </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000182228?returnurl=common%2Fsearchresults%2FRADD%20Knowledge%20Area:%20Part%202%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">RADD Knowledge Area: Part 2 (53min)</a></td></tr>
+        <tr><td><input name="Course" id="CB159" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB159">&nbsp;</label></td><td><b>Business Analytics Role Skill (Continued) </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000181690?returnurl=common%2Fsearchresults%2FThe%20Solution%20Evaluation%20Knowledge%20Area%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">The Solution Evaluation Knowledge Area (1h1min)</a></td></tr>
+        <tr><td><input name="Course" id="CB160" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB160">&nbsp;</label></td><td><b>Business Analytics Role Skill (Continued) </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000178299?returnurl=common%2Fsearchresults%2FBusiness%20Analysis%20Analytical%20Techniques%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">Business Analysis Analytical Techniques (1h38min)</a></td></tr>
+        <tr><td><input name="Course" id="CB161" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB161">&nbsp;</label></td><td><b>Business Analytics Role Skill (Continued) </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000181166?returnurl=common%2Fsearchresults%2FBusiness%20Analysis%20Professional%20Effectiveness%20Competencies%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">Business Analysis Professional Effectiveness Competencies (52min)</a></td></tr>
+        <tr><td><input name="Course" id="CB162" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB162">&nbsp;</label></td><td><b>Business Analytics Role Skill (Continued) </b></td> <td class="link"><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/me/learningeventdetail/cours000000000178241?returnurl=common%2Fsearchresults%2FPerspectives%20for%20Effective%20Business%20Analysis%2FLEARNINGEVENT,OFFERINGTEMPLATE,CERTIFICATION,CURRICULUM,OFFERING,PACKAGE,LXPCONTENT,LEARNINGPATHWAY" target="_blank">Perspectives for Effective Business Analysis (1h50min)</a></td></tr>
+        </table>
+
+        <p>
+            &nbsp;
+        </p>
+        <strong>Week 4</strong><br>
+        <p>
+            &nbsp;
+        </p>
+
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB30" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB30">&nbsp;</label></td><td><b>SDLC - Phasss and models (waterfall, V-model, agile) </b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$633621:_ss_cca:it_ccdnatv_04_enus" target="_blank">DEVASC: Software Development Methodologies (56min):</a></td></tr>
+        <tr><td><input name="Course" id="CB31" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB31">&nbsp;</label></td><td><b>SDLC - Phasss and models (waterfall, V-model, agile) </b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$457138:_ss_cca:sd_wtfl_a01_it_enus" target="_blank">The Waterfall Software Development Model (1h41min): </a></td></tr>
+        <tr><td><input name="Course" id="CB32" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB32">&nbsp;</label></td><td><b>SDLC - Phasss and models (waterfall, V-model, agile) </b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$525471:_ss_cca:sd_adev_a01_it_enus" target="_blank">Introduction to Agile Software Development (1h06min): </a></td></tr>
+        <tr><td><input name="Course" id="CB33" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB33">&nbsp;</label></td><td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$469561:_ss_cca:er_tgaf_a01_it_enus" target="_blank">TOGAF® Fundamentals - Enterprise Architecture Basics (1h58min):</a></td></tr>
+        <tr><td><input name="Course" id="CB34" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB34">&nbsp;</label></td><td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$469593:_ss_cca:er_tgaf_a02_it_enus" target="_blank">TOGAF® Fundamentals - Content Framework and Capability Basics (2h1min):</a></td></tr>
+        <tr><td><input name="Course" id="CB35" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB35">&nbsp;</label></td><td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td><td class="link"><a href="https://www.youtube.com/watch?v=PpsMZUSIk5M" target="_blank">Using ArchiMate in Enterprise Architect (Video 17min):</a></td></tr>
+        <tr><td><input name="Course" id="CB36" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB36">&nbsp;</label></td><td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td><td class="link"><a href="https://www.youtube.com/watch?v=PUzMTr1x3zU" target="_blank">Getting Started with Enterprise Architect (Video 14min):</a></td></tr>
+        <tr><td><input name="Course" id="CB37" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB37">&nbsp;</label></td><td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td><td class="link"><a href="https://www.youtube.com/watch?v=_O1DeuP8bBw" target="_blank">Enterprise Architect 13 (33min):</a></td></tr>
+        
+        <tr><td><input name="Course" id="CB38" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB38">&nbsp;</label></td><td><b>Business case development: Costs, benefits, risks, TCO, ROI, technical debt, CAPEX/OPEX et al. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$501740:_ss_cca:fin_08_a02_bs_enus" target="_blank">Basic Budgeting for Non-financial Professionals (28min):</a></td></tr>
+        <tr><td><input name="Course" id="CB39" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB39">&nbsp;</label></td><td><b>Business case development: Costs, benefits, risks, TCO, ROI, technical debt, CAPEX/OPEX et al. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$260437:_ss_cca:pd_12_a05_bs_enin" target="_blank">Decision Making: Tools and Techniques (1h):</a></td></tr>
+        <tr><td><input name="Course" id="CB40" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB40">&nbsp;</label></td>  <td><b>Business case development: Costs, benefits, risks, TCO, ROI, technical debt, CAPEX/OPEX et al. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$516474:_ss_cca:afn_01_a02_bs_enus" target="_blank">Managing with a Cost-control Mindset (31min): </a></td></tr>
+        <tr><td><input name="Course" id="CB41" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB41">&nbsp;</label></td><td><b>Business case development: Costs, benefits, risks, TCO, ROI, technical debt, CAPEX/OPEX et al. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$501643:_ss_cca:ast_01_a05_bs_enus" target="_blank">Responding Effectively to Risks (27min):</a></td></tr>
+        <tr><td><input name="Course" id="CB42" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB42">&nbsp;</label></td><td><b>Business case development: Costs, benefits, risks, TCO, ROI, technical debt, CAPEX/OPEX et al. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$458119:_ss_cca_t:sd_spsc_a02_it_enus_t113" target="_blank">Identifying and Reducing Technical Debt ( Video 7min):</a></td></tr>
+        <tr><td><input name="Course" id="CB43" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB43">&nbsp;</label></td><td><b>Business case development: Costs, benefits, risks, TCO, ROI, technical debt, CAPEX/OPEX et al. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$504106:_ss_cca:acm_01_a01_bs_enus" target="_blank">Developing an Effective Business Case (30min):</a></td></tr>
+        <tr><td><input name="Course" id="CB44" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB44">&nbsp;</label></td><td><b>Business case development: Costs, benefits, risks, TCO, ROI, technical debt, CAPEX/OPEX et al. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$497716:_ss_cca:ast_02_a01_bs_enus" target="_blank">Preparing and Implementing a Business Plan (30min):</a></td></tr>
+        
+        <tr><td><input name="Course" id="CB163" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB163">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum . </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1RhcmdldGVkX1Byb2dyYW1zX3F2dHMvSVRfTGVhcm5pbmdfdDJ0ZS9Qcm9qZWN0X01hbmFnZW1lbnRfJl9JVElMX3VoanQvUHJvakNvbW11ZW1lbnQx_fcpathe_#summary/COURSES/CDE$523279:_ss_cca:apj_28_a01_bs_enus" target="_blank">Project Management Introduction (PMBOK® Guide Sixth Edition) (1h3min):</a></td></tr>
+        <tr><td><input name="Course" id="CB164" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB164">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum.  </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1RhcmdldGVkX1Byb2dyYW1zX3F2dHMvSVRfTGVhcm5pbmdfdDJ0ZS9Qcm9qZWN0X01hbmFnZW1lbnRfJl9JVElMX3VoanQvUHJvakNvbW11ZW1lbnQx_fcpathe_#summary/COURSES/CDE$523292:_ss_cca:apj_28_a02_bs_enus" target="_blank">Project Fundamentals (PMBOK® Guide Sixth Edition) (51min):</a></td></tr>
+        <tr><td><input name="Course" id="CB165" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB165">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1RhcmdldGVkX1Byb2dyYW1zX3F2dHMvSVRfTGVhcm5pbmdfdDJ0ZS9Qcm9qZWN0X01hbmFnZW1lbnRfJl9JVElMX3VoanQvUHJvakNvbW11ZW1lbnQx_fcpathe_#summary/COURSES/CDE$523304:_ss_cca:apj_28_a03_bs_enus" target="_blank">The Process Groups (PMBOK® Guide Sixth Edition) (1h13min): </a></td></tr>
+        <tr><td><input name="Course" id="CB166" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB166">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsU29mdFNQOC9DZXJ0aWZpY2F0aW9u_fcpathe_#summary/COURSES/CDE$523189:_ss_cca:apj_18_a03_bs_enus" target="_blank">Validate and Control Scope (PMBOK® Guide Sixth Edition) (56min): </a></td></tr>
+        <tr><td><input name="Course" id="CB167" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB167">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsU29mdFNQOC9DZXJ0aWZpY2F0aW9u_fcpathe_#summary/COURSES/CDE$523200:_ss_cca:apj_19_a01_bs_enus" target="_blank">Define and Sequence Activities (PMBOK® Guide Sixth Edition) (1h24min): </a></td></tr>
+        <tr><td><input name="Course" id="CB168" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB168">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsU29mdFNQOC9DZXJ0aWZpY2F0aW9u_fcpathe_#summary/COURSES/CDE$523216:_ss_cca:apj_19_a02_bs_enus" target="_blank">Develop the Project Schedule (PMBOK® Guide Sixth Edition) (1h49min): </a></td></tr>
+        <tr><td><input name="Course" id="CB169" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB169">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsU29mdFNQOC9DZXJ0aWZpY2F0aW9u_fcpathe_#summary/COURSES/CDE$523238:_ss_cca:apj_19_a03_bs_enus" target="_blank">Control the Project Schedule (PMBOK® Guide Sixth Edition) (52min): </a></td></tr>
+        <tr><td><input name="Course" id="CB170" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB170">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$596548:_ss_cca:ds_msprod_04_enus" target="_blank">Project 2019: Creating & Organizing Tasks. (31 min): </a></td></tr>
+        <tr><td><input name="Course" id="CB171" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB171">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$590843:_ss_cca:ds_msprod_05_enus" target="_blank">Project 2019: Managing Tasks (21min): </a></td></tr>
+        <tr><td><input name="Course" id="CB172" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB172">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum (continued). </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsU29mdFNQOC9DZXJ0aWZpY2F0aW9u_fcpathe_#summary/COURSES/CDE$523250:_ss_cca:apj_20_a01_bs_enus" target="_blank">Creating a Project Budget (PMBOK® Guide Sixth Edition) (1h8min):</a></td></tr>
+        <tr><td><input name="Course" id="CB173" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB173">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum (continued). </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsU29mdFNQOC9DZXJ0aWZpY2F0aW9u_fcpathe_#summary/COURSES/CDE$527629:_ss_cca:apj_21_a01_bs_enus" target="_blank">Planning Quality Management (PMBOK® Guide Sixth Edition) (1h8min):</a></td></tr>
+        <tr><td><input name="Course" id="CB174" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB174">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum (continued). </b></td><td class="link"><a href="https://www.youtube.com/watch?v=q7fl6pOti_Y" target="_blank">Time Cost Trade-Offs (Youtube video 10 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB175" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB175">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum (continued). </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsU29mdFNQOC9DZXJ0aWZpY2F0aW9u_fcpathe_#summary/COURSES/CDE$528777:_ss_cca:apj_23_a01_bs_enus" target="_blank">Plan and Manage Communications (PMBOK® Guide Sixth Edition) (1h7min):</a></td></tr>
+        <tr><td><input name="Course" id="CB176" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB176">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum (continued). </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsU29mdFNQOC9DZXJ0aWZpY2F0aW9u_fcpathe_#summary/COURSES/CDE$528791:_ss_cca:apj_24_a01_bs_enus" target="_blank">Planning Risk Management (PMBOK® Guide Sixth Edition) (1h7min):</a></td></tr>
+        <tr><td><input name="Course" id="CB177" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB177">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum (continued). </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/sites/PPMAcademy/SitePages/Home.aspx" target="_blank">PPM Academy</a></td></tr>
+        <tr><td><input name="Course" id="CB178" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB178">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum (continued). </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:x:/r/sites/pmdxc/_layouts/15/WopiFrame.aspx?sourcedoc=%7b97B9B6E0-85FC-4638-A419-997495CD1213%7d&file=PMP%20Sixth%20Edition%20Curriculum%20Rev%201.xlsx&action=default&cid=e45452f6-a26e-4147-88a8-da4ddb188313" target="_blank">PMP Complete curriculum:</a></td></tr>
+        <tr><td><input name="Course" id="CB179" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB179">&nbsp;</label></td><td><b>PMP Sixth Edition Curriculum (continued). </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/sites/PPMAcademy/PMPCertification/SitePages/PMP%20Acceleration%20Program.aspx" target="_blank">PMP Acceleration Program</a></td></tr>
+        </table>
+
+        <p>
+            &nbsp;
+        </p>
+        <strong>Week 5</strong><br>
+        <p>
+            &nbsp;
+        </p>
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB48" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB48">&nbsp;</label></td><td><b>Agile - Scrum framework (concepts, ceremonies and techniques) </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$473241:_ss_cca:ib_apmf_a01_it_enus" target="_blank">Agile Principles, Methodologies, and Mindset (2h34min): </a></td></tr>
+        <tr><td><input name="Course" id="CB49" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB49">&nbsp;</label></td><td><b>Agile - Scrum framework (concepts, ceremonies and techniques) </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$614146:_ss_cca:it_smtrnsdj_01_enus" target="_blank">Scrum Foundations: Transitioning to Scrum (47 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB50" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB50">&nbsp;</label></td><td><b>Agile - Scrum framework (concepts, ceremonies and techniques) </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$441327:_ss_cca:sd_spsc_a01_it_enus" target="_blank">Software Practices (SCRUM): SCRUM Roles (2h30min):</a></td></tr>
+        <tr><td><input name="Course" id="CB51" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB51">&nbsp;</label></td><td><b>Agile - Scrum framework (concepts, ceremonies and techniques) </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$458087:_ss_cca:sd_spsc_a02_it_enus" target="_blank">Software Practices (SCRUM): SCRUM Meetings (2h30min):</a></td></tr>
+        <tr><td><input name="Course" id="CB180" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB180">&nbsp;</label></td><td><b>Agile - Scrum framework - workshop </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:x:/r/sites/dxcuAcademyRep/_layouts/15/doc.aspx?sourcedoc=%7B44AAD928-3D58-4B03-A92C-E01072E62675%7D&file=Agile_PM%20Schedule_05-25-18.xlsx&action=default" target="_blank">CAT411E Agile Practices Overview  (4 hours – 2 hours x 2 days).  It is a pre-requisite to the take the CAT415</a></td></tr>
+        <tr><td><input name="Course" id="CB181" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB181">&nbsp;</label></td><td><b>Agile - Scrum framework - workshop </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:x:/r/sites/dxcuAcademyRep/_layouts/15/doc.aspx?sourcedoc=%7B44AAD928-3D58-4B03-A92C-E01072E62675%7D&file=Agile_PM%20Schedule_05-25-18.xlsx&action=default" target="_blank">CAT415 Scrum in Practice Overview  (5 hours – 2.5 hours x 2 days) Below you find the open classes, Open Classes scheduled: </a></td></tr>
+        <tr><td><input name="Course" id="CB182" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB182">&nbsp;</label></td><td><b>Agile - Kanban framework (concepts and techniques) </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:x:/r/sites/dxcuAcademyRep/_layouts/15/doc.aspx?sourcedoc=%7B44AAD928-3D58-4B03-A92C-E01072E62675%7D&file=Agile_PM%20Schedule_05-25-18.xlsx&action=default" target="_blank">Open Classes scheduled::</a></td></tr>
+        <tr><td><input name="Course" id="CB52" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB52">&nbsp;</label></td><td><b>Agile - Kanban framework (concepts and techniques) </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$485922:_ss_cca:sd_kafu_a01_it_enus" target="_blank">Kanban Fundamentals: Using Kanban in IT and Software Development (3hs40min):</a></td></tr>
+        <tr><td><input name="Course" id="CB53" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB53">&nbsp;</label></td><td><b>Agile - Kanban framework - workshop </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/RESOURCES/CDE$501613:_ss_ja:oper_46_a02_bs_enus_jaoper_46_a02_bs_enust1601" target="_blank">Kanban Steps (job aid):</a></td></tr>
+        <tr><td><input name="Course" id="CB183" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB183">&nbsp;</label></td><td><b>Agile - Kanban framework - workshop </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:x:/r/sites/dxcuAcademyRep/_layouts/15/doc.aspx?sourcedoc=%7B44AAD928-3D58-4B03-A92C-E01072E62675%7D&file=Agile_PM%20Schedule_05-25-18.xlsx&action=default" target="_blank">VILT class CAT419 Kanban Overview  (2 hours):</a></td></tr>
+        <tr><td><input name="Course" id="CB54" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB54">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$618462:_ss_cca:it_smcsafdj_01_enus" target="_blank">Scaling Scrum: Choosing Scaled Agile Frameworks (58 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB184" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB184">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:x:/r/sites/dxcuAcademyRep/_layouts/15/doc.aspx?sourcedoc=%7B44AAD928-3D58-4B03-A92C-E01072E62675%7D&file=Agile_PM%20Schedule_05-25-18.xlsx&action=default" target="_blank">VILT CAT425 Introdu​ction to Agile Scaling  (4 hours – 2 hours x 2 days).</a></td></tr>
+        <tr><td><input name="Course" id="CB55" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB55">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$568699:_ss_cca_t:it_dsgistdj_01_enus_t14" target="_blank">Data Regulations (video 4 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB56" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB56">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$533844:_ss_cca:lchr_01_b66_lc_enuk" target="_blank">EU General Data Protection Regulation (UK) (25 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB57" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB57">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$584130:_ss_cca:lchr_01_c03_lc_enuk" target="_blank">COMPLIANCE SHORT: GDPR (UK) (4 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB58" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB58">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$370278:_ss_cca:lchp_01_a05_lc_enus" target="_blank">HIPAA - Security Rule for Covered Entities (24 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB59" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB59">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$597081:_ss_cca:lchr_01_b87_lc_enus" target="_blank">PCI DSS Compliance (15min):</a></td></tr>
+        <tr><td><input name="Course" id="CB60" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB60">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$411736:_ss_cca:lchr_01_a54_lc_enuk" target="_blank">PCI Compliance Essentials in the UK (30 min)</a></td></tr>
+        <tr><td><input name="Course" id="CB61" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB61">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$250948:_ss_cca:lchr_01_a19_lc_enus" target="_blank">Sarbanes-Oxley: What You Need to Know (57 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB62" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB62">&nbsp;</label></td><td><b>SAFe (Scaled Agile Framework) - Overview of regulatory reporting and compliance -</b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$424901:_ss_cca:fini_07_a01_bs_enus" target="_blank">Basel II and Basel III: An Overview (1h):</a></td></tr>
+        <tr><td><input name="Course" id="CB185" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB185">&nbsp;</label></td><td><b>Data Architecture II - Dimensional modeling, SCD 1,2,3, STAR schema, Kimball/Inmon approaches. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$554277:_ss_cca:it_dfdwes_01_enus" target="_blank">Data Warehouse Essential: Concepts (1h44min):</a></td></tr>
+        <tr><td><input name="Course" id="CB186" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB186">&nbsp;</label></td><td><b>Data Architecture II - continue... </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$554297:_ss_cca:it_dfdwes_02_enus" target="_blank">Data Warehouse Essential: Architecure Frameworks and Implementation (1h02min):</a></td></tr>
+        <tr><td><input name="Course" id="CB187" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB187">&nbsp;</label></td><td><b>Data Architecture II  - continue... </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$522791:_ss_cca:md_idwm_a12_it_enus" target="_blank">Script Components (47min):</a></td></tr>
+        <tr><td><input name="Course" id="CB67" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB67">&nbsp;</label></td><td><b>Solution Architecture - design principles, approaches and methods </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$612768:_ss_cca:it_mlbegadj_01_enus" target="_blank">Enterprise Architecture: Architectural Principles & Patterns (1h35min):</a></td></tr>
+        <tr><td><input name="Course" id="CB188" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB188">&nbsp;</label></td><td><b>Solution Architecture - design principles, approaches and methods </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/sites/AnalyticsKnowledgeLibrary/Knowledge%20Library%2020/HDM%20Architecture%20Service%20R2.4%20Package.zip" target="_blank">HDM Architecture:</a></td></tr>
+</table>
+        <p>
+            &nbsp;
+        </p>
+        <strong>Week 6</strong><br>
+        <p>
+            &nbsp;
+        </p>
+
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB87" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB87">&nbsp;</label></td><td><b>CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible. Selenium </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$614372:_ss_cca:it_docicddj_01_enus" target="_blank">CI/CD Implementation for DevOps (1h28min):</a></td></tr>
+        <tr><td><input name="Course" id="CB88" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB88">&nbsp;</label></td><td><b>CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible. Selenium </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$614384:_ss_cca_t:it_docicddj_01_enus_t70" target="_blank">CI/CD Using GitLab</a></td></tr>
+        <tr><td><input name="Course" id="CB89" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB89">&nbsp;</label></td><td><b>CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible. Selenium </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$541330:_ss_cca_t:os_dojk_a02_it_enus_t36" target="_blank">Working with Maven Build Jobs for Jenkins (video 6 min)</a></td></tr>
+        <tr><td><input name="Course" id="CB90" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB90">&nbsp;</label></td><td><b>CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible. Selenium </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$470655:_ss_cca:sd_jenk_a01_it_enus" target="_blank">Working with Jenkins: Fundamentals (2hs25min):</a></td></tr>
+        <tr><td><input name="Course"id="CB91" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB91">&nbsp;</label></td><td><b>CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible. Selenium </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$466324:_ss_cca:sd_apma_a01_it_enus" target="_blank"> (OPTIONAL) Getting Started with Maven (2hs22min):</a></td></tr>
+        <tr><td><input name="Course" id="CB92" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB92">&nbsp;</label></td><td><b>Workshop: CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible, Selenium. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/VIDEOS/RW$4845188:_ss_video:121605" target="_blank">Kubernetes: Introduction to Docker (video 4 min)</a></td></tr>
+        <tr><td><input name="Course" id="CB93" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB93">&nbsp;</label></td><td><b>Workshop: CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible, Selenium. </b></td><td class="link"><a href=" https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$536671:_ss_cca:os_kube_a01_it_enus" target="_blank">Introduction to Kubernetes (1h21min): </a></td></tr>
+        <tr><td><input name="Course" id="CB94" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB94">&nbsp;</label></td><td><b>Workshop: CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible, Selenium. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$526810:_ss_cca:os_dkws_a01_it_enus" target="_blank">Docker Introduction (1h7min):</a></td></tr>
+        <tr><td><input name="Course" id="CB95" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB95">&nbsp;</label></td><td><b>Workshop: CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible, Selenium. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$633308:_ss_cca_t:it_cokmcldj_01_enus_t35" target="_blank">Docker vs. Kubernetes (video 5 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB96" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB96">&nbsp;</label></td><td><b>Workshop: CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible, Selenium. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$557838:_ss_cca:it_doanss_01_enus" target="_blank">DevOps with Ansible: Overview (46 min)</a></td></tr>
+        <tr><td><input name="Course" id="CB97" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB97">&nbsp;</label></td><td><b>Workshop: CI/CD with Git, Jenkins/Maven, Docker, Kubernetes, Ansible, Selenium. </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$530151:_ss_cca:sd_sele_a01_it_enus" target="_blank">Introduction to Automated Testing with Selenium (47min):</a></td></tr>
+        <tr><td><input name="Course" id="CB98" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB98">&nbsp;</label></td><td><b>Machine Learning I - Supervised learning: concepts, algorithms, approaches </b></td><td class="link"><a href="https://towardsdatascience.com/supervised-unsupervised-and-deep-learning-aa61a0e5471c" target="_blank">Supervised, unsupervised and deep learning (article):</a></td></tr>
+        <tr><td><input name="Course" id="CB99" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB99">&nbsp;</label></td><td><b>Machine Learning I - Supervised learning: concepts, algorithms, approaches </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$525380:_ss_cca:sd_exml_a01_it_enus" target="_blank">Introduction to Machine Learning and Supervised Learning (55min)</a></td></tr>
+        <tr><td><input name="Course" id="CB100" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB100">&nbsp;</label></td><td><b>Machine Learning I - Supervised learning, application workshop with PyTorch, Keras and Tensorflow </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$639857:_ss_cca:it_aievaldj_01_enus" target="_blank">Evaluating Current and Future AI Technologies and Frameworks (40 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB101" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB101">&nbsp;</label></td><td><b>Machine Learning I - Supervised learning, application workshop with PyTorch, Keras and Tensorflow </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$525324:_ss_cca:sd_exml_a06_it_enus" target="_blank">Applying Machine Learning (39min):</a></td></tr>
+        <tr><td><input name="Course" id="CB102" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB102">&nbsp;</label></td><td><b>Machine Learning I - Supervised learning, application workshop with PyTorch, Keras and Tensorflow </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$541505:_ss_cca:cl_gcde_a12_it_enus" target="_blank">Machine Learning with TensorFlow and Cloud ML (1h28min):</a></td></tr>
+        <tr><td><input name="Course" id="CB103" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB103">&nbsp;</label></td><td><b>Machine Learning I - Supervised learning, application workshop with PyTorch, Keras and Tensorflow </b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$552528:_ss_cca_t:it_sdaidt_01_enus_t35" target="_blank">TensorFlow for Machine Learning (video 5 min)</a></td></tr>
+</table>
+<p>
+    &nbsp;
+</p>
+<strong>Additional Live Training - Modules and Reading</strong><br>
+<p>
+    &nbsp;
+</p>
+
+<table>
+    <tr class="heading">
+      <th></th>
+      <th>Topic</th>
+      <th class="link">Course Link</th>
+    </tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;<td><b>Prerequisite Reading before CM #1 </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:b:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%201/Pre%20Read/Leading%20Change_Kotter.pdf?csf=1&web=1&e=ixvHP9" target="_blank">Leading Change - Kotter</a></td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;<td><b>Prerequisite Reading before CM #1 </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:b:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%201/Pre%20Read/Congruence%20Model_Insight.pdf?csf=1&web=1&e=1g8bfQ" target="_blank">Congruence Model - Insight</a></td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;<td><b>Prerequisite Reading before CM #1 </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:b:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%201/Pre%20Read/Driving%20Radial%20Change.pdf?csf=1&web=1&e=AK2NxY" target="_blank">Driving Radical Change</a></td></tr>
+    <tr><td><input name="Course" id="CB191" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB191">&nbsp;</label></td><td><b>Change Management (CM #1)</b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:p:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%201/Slide%20Deck/20211123%20Session%201_Draft.pptx?d=w698b783dac63433cb96105b293ac0846&csf=1&web=1&e=L0H1sC" target="_blank">An Introduction to Change Management (4 hours)</a></td></tr>
+        
+    <tr><td>&nbsp;&nbsp;&nbsp;<td><b>Prerequisite Reading before CM #2 </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:p:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%202/Pre%20Read/Lecture%207%20Additional%20Reading%20-%20FDS%20Case%20Study.ppt?d=w4bcf0152242144239fb482d46526c2b5&csf=1&web=1&e=xakO3Z" target="_blank">FDS Case Study</a></td></tr>
+    <tr><td><input name="Course" id="CB192" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB192">&nbsp;</label></td><td><b>Change Management (CM #2)</b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:p:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%202/Slide%20Deck/20211123%20Session%202_Draft.pptx?d=w5a28d758e1f946628d17bfb5d1385738&csf=1&web=1&e=sk5Cig" target="_blank">An Introduction to Change Management & Communication Tools (4 hours)</a></td></tr>
+        
+    <tr><td>&nbsp;&nbsp;&nbsp;<td><b>Prerequisite Reading before CM #3 </b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:p:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%203/Preread/Additional%20Reading%20-%20Managing%20Change%20in%20a%20Changing%20Environment.ppt?d=w08963b0f5c224f6d99028c061c3c6997&csf=1&web=1&e=ReWsNn" target="_blank">Managing Change in today's constantly changing environment</a></td></tr>
+    <tr><td><input name="Course" id="CB193" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB193">&nbsp;</label></td><td><b>Change Management (CM #3)</b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:p:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%203/Course%20Content/20190812%20Draft%20Change%20Strategy%20Doc%20v18.pptx?d=w4c61179f0ba84407b73ce9b0aeef8a4e&csf=1&web=1&e=ce5Rxm" target="_blank">Case Study Review - Change Management Strategy (4 hours)</a></td></tr>
+    
+    <tr><td>&nbsp;&nbsp;&nbsp;<td><b>Prerequisite Reading before CM #4 </b></td><td class="link"><a>TBD</a></td></tr>
+    <tr><td><input name="Course" id="CB194" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB194">&nbsp;</label></td><td><b>Change Management (CM #4)</b></td><td class="link"><a href="https://dxcportal.sharepoint.com/:f:/r/sites/DXCConsultingAnalyticsMOCBootcamp2122/Shared%20Documents/Session%204/Assignment?csf=1&web=1&e=u5JvGU" target="_blank">Group Assignment Presentation (2 hours)</a></td></tr>
+<table>
+        <p>
+            &nbsp;
+        </p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+
+    </div>
+    <p>
+        &nbsp;
+    </p>
+
+</div>
+
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<div class="footer">
+    <p>For Queries related to Forms Contact: Erin Dunne or Ryan Sers <br>For any technical difficulties contact ryan.sers@dxc.com <br>       <span>&#169;</span>
+        DXC Technology 2021</p>
+  </div>
+<script src="script.js?1"></script>
+<script src="alertify.min.js"></script>
+</body>
+</html>

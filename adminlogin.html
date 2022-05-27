@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://kit.fontawesome.com/6584fe6fb3.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="alertify.min.css"/>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+</head>
+<body>
+
+    <section>
+        <header>
+            <div class="logo">
+          <a href="#"><img src="img/logo.png" alt="DXC Logo"></a>
+            </div>
+            <nav>
+        <ul>
+          <li><a href="./index.html">Home - Technical</a></li>
+          <li><a href="./MLOps.html">MLOps+</a></li>
+          <li><a href="./data_engineering.html">Data Engineering+</a></li>
+          <li><a href="./consulting.html">Home - Consulting</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Update other Information</button>
+            <div class="dropdown-content">
+              <li><a href="update.html" target="_blank"> Personal Information</a></li>
+              <li><a href="shadowing.html" target="_blank">Shadowing Work</a></li>
+              <li><a href="fulltime.html" target="_blank">Full-Time Work</a></li>
+              <li><a href="skills.html" target="_blank">My Skills</a></li>
+              <li><a href="training.html" target="_blank">My Training</a></li>
+            </div>
+          </div>
+      
+        <li><a href="./faq.html" target="_blank">FAQ</a></li>
+          <li><a href="https://github.dxc.com/ajha62/DXC-Analytics-Bootcamp-Training" target="_blank">Contribute</a></li>
+          <li><a href="./adminlogin.html">Admin</a></li>
+      </ul>
+            </nav>
+            <div class="menu">
+               <a href="#" class="menu-trigger">Menu</a>
+            </div>
+         </header>
+         <p>
+             &nbsp;
+         </p>
+         <p>
+             &nbsp;
+         </p>
+      </section>
+
+    <form>      
+        <label for="pswd">Enter your password: </label>
+        <input type="password" id="pswd">
+        <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+
+    <!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="adminpage.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+    
+</body>
+</html>

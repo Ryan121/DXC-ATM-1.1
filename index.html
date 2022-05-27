@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <title>Homepage - Technical</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<script src="https://kit.fontawesome.com/6584fe6fb3.js" crossorigin="anonymous"></script>
+<!-- CSS -->
+<link rel="stylesheet" href="alertify.min.css"/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body onLoad="timeRefresh(72000000);">
+<section>
+  <header>
+      <div class="logo">
+    <a href="#"><img src="img/logo.png" alt="DXC Logo"></a>
+      </div>
+      <nav>
+  <ul>
+    <li><a href="./index.html">Technical</a></li>
+    <li><a href="./MLOps.html">MLOps+</a></li>
+    <li><a href="./data_engineering.html">Data Engineering+</a></li>
+    <li><a href="./consulting.html">Consulting</a></li>
+    <div class="dropdown">
+      <button class="dropbtn">Update other Information</button>
+      <div class="dropdown-content">
+        <li><a href="update.html" target="_blank"> Personal Information</a></li>
+        <li><a href="shadowing.html" target="_blank">Shadowing Work</a></li>
+        <li><a href="fulltime.html" target="_blank">Full-Time Work</a></li>
+        <li><a href="skills.html" target="_blank">My Skills</a></li>
+        <li><a href="training.html" target="_blank">My Training</a></li>
+      </div>
+    </div>
+
+  <li><a href="./faq.html" target="_blank">FAQ</a></li>
+    <li><a href="https://github.dxc.com/ajha62/DXC-Analytics-Bootcamp-Training" target="_blank">Contribute</a></li>
+    <!-- <li><a href="./adminlogin.html">Admin</a></li> -->
+</ul>
+      </nav>
+      <div class="menu">
+         <a href="#" class="menu-trigger">Menu</a>
+      </div>
+   </header>
+   <p>
+   	&nbsp;
+   </p>
+   <p>
+   	&nbsp;
+   </p>
+</section>
+
+<div class="grid-container">
+<div class="relative">
+  <h2 class="para animate__animated animate__backInLeft"><b>Your Details</b></h2>
+<p class="para animate__animated animate__backInLeft"><i class="fas fa-user-graduate" style="color: #339af0;"></i> Welcome: <span id="welcometext"></span></p>
+  <p class="para animate__animated animate__backInLeft"><i class="fas fa-id-card-alt" style="color: #339af0;"></i> Employee ID:<span id="registeredid"></span><span style="padding-left:10px"> <button onclick="copythis()">Copy to clipboard</button></span>
+<p class="para animate__animated animate__backInLeft"><i class="fas fa-calendar-day" style="color: #339af0;"></i> Bootcamp Started On: <span id="registereddate"></span> </p>
+<p class="para animate__animated animate__backInLeft"><i class="fas fa-graduation-cap" style="color: #339af0;"></i> Degree: <span id="registereddegree"></span> </p>
+<p class="para animate__animated animate__backInLeft"><i class="fas fa-briefcase" style="color: #339af0;"></i> Work Status: <span id="registeredstatus"></span></p>
+<p class="para animate__animated animate__backInLeft"><i class="fas fa-envelope" style="color: #339af0;"></i> Registered Email: <span id="registeredemail"></span></p>
+<a href="essentials.html" target="_blank"><button class="button button5 space animate__animated animate__lightSpeedInRight"><b>Update weekly information.</b></button></a>
+</div>
+
+  <div>
+    <p class="para"> <div style="text-align: center; color: red"><b class=""> New User: <i class=""></i> </b></div><br> <ul>
+    <li class="para">Ensure you are logged in to Microsoft (use the button below to log-in to Microsoft).</li>
+    <li class="para">Ensure <b>Your details</b> are filled properly, and no fields are left behind. You can use the <b>Reset Your Details</b> button for this.</li>
+    <li class="para">YOU MUST check off the <b>Bootcamp Modules</b> you have completed, then click <b>Send your weekly update</b> before updating any other data.</li>
+    <li class="para">Complete all forms in the <b>Update your Information</b> drop-down menu above.</li>
+  </ul></p>
+  </div>
+  <div>
+    <p class="para"> <div style="text-align: center; color: green"><b class=""> Returning User: <i class=""></i> </b></div><br> <ul>
+    <li class="para">Ensure you are logged in to Microsoft (use the button below to log-in to Microsoft).</li>
+    <li class="para">Ensure <b>Your details</b> are visible on the portal and are correct. You can use the <b>Reset Your Details</b> button to update these details.</li>
+    <li class="para">You only need to send your weekly update if your bootcamp progress has changed since last week.</li>
+    <li class="para">Update any forms in the <b>Update your Information</b> drop-down menu where any data on that form has changed</li>
+  </ul></p>
+  </div>
+<div class="progress-pie-chart">
+  <div class="ppc-progress">
+    <div class="ppc-progress-fill"></div>
+  </div>
+  <div class="ppc-percents">
+    <div class="pcc-percents-wrapper">
+      <span>%</span>
+      <p class="p1 animate__animated animate__flash">Of Total Modules Completed</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<p>
+	&nbsp;
+</p>
+<br>
+<div class="highlight">
+<p>
+  <h2>Last Updated on 04/02/2022 - Key Changes & Instructions</h2>
+  </p>
+<br>
+<ul>
+  <li>Certification Tracker added - Please check the boxes of the certifications (on the Technical page) you have completed 
+    and upload proof of certification via the gold 'Submit a certification certificate' button seen below.</li>
+  <br>
+  <li>A bootcamp update email prompt has been added - An email has been scheduled to be sent daily 
+    to users who have not sent an update email for more than 7 days if they have not yet completed the bootcamp. 
+  </li>
+  <br>
+</ul>
+</div>
+
+<p>
+  &nbsp;
+</p>
+<div style="text-align: center">
+
+<button class="submit button button5 animate__animated animate__lightSpeedInRight" onclick="sendMail('Technical')">Send your bootcamp update.</button>
+
+<a href="https://forms.office.com/r/g443E4FntF" target="_blank"><button class="cert_button submit button button5 space animate__animated animate__lightSpeedInRight">Submit a certification certificate.</button></a>
+
+<a href="https://login.microsoftonline.com" target="_blank"><button class="button button5 space animate__animated animate__lightSpeedInRight">Login to Microsoft.</button></a>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="popup()">Reset Your Details.</button>
+</div>
+<!--
+<button class="submit button button5 animate__animated animate__lightSpeedInRight" onclick="sendMail()">Send your weekly update.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick()">Reset your name and email.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClickEmp()">Reset your employee ID.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick2()">Reset your working status.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick3()">Reset your starting date and degree.</button>
+
+-->
+<p>
+	&nbsp;
+</p>
+<h1 class="para">Certification Tracker</h1>
+<p>
+	&nbsp;
+</p>
+<h2 class="para">Mandatory Technical Bootcamp Certifications</h2>
+<p>
+	&nbsp;
+</p>
+<table>
+  <tr class="heading">
+    <th>
+      Certification Name
+    </th>
+    <th class="dates">Completed?</th>
+  </tr>
+
+  
+  <tr>
+    <td class="courseName">AZ-900: Microsoft Azure Fundamentals</td>
+    <td><input  name="Cert" id="CT1" class="box_opac" value="ON" type="checkbox">&nbsp;&nbsp;<label for="CT1">&nbsp;</label></td>
+  </tr>
+
+  <tr>
+    <td class="courseName">SC-900: Microsoft Security, Compliance, and Identity Fundamentals</td>
+    <td><input name="Cert" id="CT2" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT2">&nbsp;</label></td>
+  </tr>
+
+  <tr>
+    <td class="courseName">AWS Cloud Practitioner Essentials</td>
+    <td><input name="Cert" id="CT3" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT3">&nbsp;</label></td>
+  </tr>
+
+</table>
+<br>
+
+<p>
+	&nbsp;
+</p>
+<h2 class="para">Additional Certifications acquired outside of bootcamp</h2>
+<h4 class="para">(If your certification is not present please email ryan.sers@dxc.com)</h4>
+<p>
+	&nbsp;
+</p>
+
+<div class="tableFixHead">
+
+  <table class="table_collapse">
+
+    <thead>
+
+      <tr class="heading">
+        
+        <th class="therad">Certification Name</th>
+        <th class="dates therad">Completed?</th>
+
+      </tr>
+
+    </thead>
+
+      <tr>
+        <td class="courseName">AI-900: Azure AI Fundamentals</td>
+        <td><input  name="Cert" id="CT4" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT4">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">DP-900: Azure Data Fundamentals</td>
+        <td><input  name="Cert" id="CT5" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT5">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">PL-900: Power Platform Fundamentals</td>
+        <td><input name="Cert" id="CT6" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT6">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">MB-901: Dynamics 365 Fundamentals</td>
+        <td><input name="Cert" id="CT7" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT7">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">PL-400: Power Platform Developer Associate </td>
+        <td><input name="Cert" id="CT8" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT8">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AZ-204: Azure Developer Associate</td>
+        <td><input name="Cert" id="CT9" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT9">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">DA-100: Azure Data Analyst Associate</td>
+        <td><input name="Cert" id="CT10" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT10">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">DP-100: Azure Data Science Associate</td>
+        <td><input name="Cert" id="CT11" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT11">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AI-100: Azure AI Associate</td>
+        <td><input name="Cert" id="CT12" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT12">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">DP-300: Azure Database Administrator Associate</td>
+        <td><input name="Cert" id="CT13" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT13">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">DP-203: Azure Data Engineer Associate</td>
+        <td><input name="Cert" id="CT14" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT14">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AZ-220: Azure IoT Developer Specialty</td>
+        <td><input name="Cert" id="CT15" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT15">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AZ-305: Azure Solutions Architect Expert</td>
+        <td><input name="Cert" id="CT16" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT16">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AZ-400 Azure DevOps Engineer Expert</td>
+        <td><input name="Cert" id="CT17" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT17">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AWS Solutions Architect</td>
+        <td><input name="Cert" id="CT18" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT18">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AWS SysOps Administator</td>
+        <td><input name="Cert" id="CT19" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT19">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AWS Developer</td>
+        <td><input name="Cert" id="CT20" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT20">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AWS Solutions Architect</td>
+        <td><input name="Cert" id="CT21" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT21">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AWS DevOps Engineer</td>
+        <td><input name="Cert" id="CT22" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT22">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AWS Data Analytics Specialty</td>
+        <td><input name="Cert" id="CT23" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT23">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AWS Machine Learning Specialty</td>
+        <td><input name="Cert" id="CT24" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT24">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">AWS Database Specialty</td>
+        <td><input name="Cert" id="CT25" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT25">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">Google Cloud Engineer Associate</td>
+        <td><input name="Cert" id="CT26" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT26">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">Google Cloud Architect</td>
+        <td><input name="Cert" id="CT27" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT27">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">Google Cloud Developer</td>
+        <td><input name="Cert" id="CT28" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT28">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">Google Cloud Data Engineer</td>
+        <td><input name="Cert" id="CT29" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT29">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">Google Cloud DevOps Engineer</td>
+        <td><input name="Cert" id="CT30" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT30">&nbsp;</label></td>
+      </tr>
+
+      <tr>
+        <td class="courseName">Google Cloud Machine Learning Engineer</td>
+        <td><input name="Cert" id="CT31" type="checkbox" value="ON" class="box_opac">&nbsp;&nbsp;<label for="CT31">&nbsp;</label></td>
+      </tr>
+
+  </table>
+
+</div>
+
+<br>
+<br>
+
+<p>
+  &nbsp;
+</p>
+
+<h1 class="para"><b>BOOTCAMP MODULES</b></h1>
+<p>
+  &nbsp;
+</p>
+<div class="checkbox">
+<p>
+	<strong>Fundamentals 1</strong>
+</p>
+<p>
+  &nbsp;
+</p>
+
+<div id="checks">
+  <table>
+    <tr class="heading">
+      <th></th>
+      <th>Topic</th>
+      <th>Course Link</th>
+      <th>Relevant Role</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB1" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB1">&nbsp;</label></td>
+      <td><b>Introduction to Analytics:</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvQ2xvdW1wdXRpYXRpb24vTWljcm9zb2Z0L2NsX21zYXo._fcpathe_#summary/COURSES/CDE$615410:_ss_cca:bs_dgt61_a01_enus" target="_blank">Basic Analytical Methods </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>29 min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB2" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB2">&nbsp;</label></td>
+      <td><b>Introduction to Analytics:</b></td>
+      <td><a href="https://dxc.sabacloud.com/Saba/Web_spf/NA2PRD0008/app/shared;spf-url=common%2Fleclassdetail%2Fregdw000000006205534%3Fcontext%3Duser&learnerId%3Demplo000000001062045" target="_blank">Data Analysis Concepts </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 40min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB3" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB3">&nbsp;</label></td>
+      <td><b>Datawarehouse Concepts</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvQ2xvdW1wdXRpYXRpb24vTWljcm9zb2Z0L2NsX21zYXo._fcpathe_#summary/COURSES/CDE$554277:_ss_cca:it_dfdwes_01_enus" target="_blank">Data Warehouse Essential:Concepts: </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hs44min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB4" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB4">&nbsp;</label></td>
+      <td><b>Database Fundamentals & SQL Overview</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvQ2xvdW1wdXRpYXRpb24vTWljcm9zb2Z0L2NsX21zYXo._fcpathe_#summary/COURSES/CDE$474991:_ss_cca:df_dbfu_a01_it_enus" target="_blank">SQL Server Fundamentals: Design Principles: </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>3h19min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB5" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB5">&nbsp;</label></td>
+      <td><b>Database Fundamentals & SQL Overview</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvQ2xvdW1wdXRpYXRpb24vTWljcm9zb2Z0L2NsX21zYXo._fcpathe_#summary/COURSES/CDE$476873:_ss_cca:df_dbfu_a02_it_enus" target="_blank">SQL Server Database Fundamentals: Creating, Optimising and Securing Databases: </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>2h38min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB6" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB6">&nbsp;</label></td>
+      <td><b>Database Fundamentals & SQL Overview</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#summary/COURSES/CDE$494327:_ss_cca:df_gdfu_a02_it_enus" target="_blank">Generics Data Base Fundamentals Relation Algebra SQL and Concurrency: </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>3h34min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB7" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB7">&nbsp;</label></td>
+      <td><b>Database Fundamentals & SQL Overview</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#summary/COURSES/CDE$494298:_ss_cca:df_gdfu_a01_it_enus" target="_blank">Generic Database Fundamentals: Architecture and Normalization Concepts </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>3h14m</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB8" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB8">&nbsp;</label></td>
+      <td><b>Fundamentals of Unix & Shell scripting</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#summary/COURSES/CDE$459993:_ss_cca:lu_unsf_a03_it_enus" target="_blank">Unis OS Fundamentals: Security</a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>1h26min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB9" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB9">&nbsp;</label></td>
+      <td><b>Fundamentals of Unix & Shell scripting</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#summary/COURSES/CDE$458770:_ss_cca:lu_unsf_a01_it_enus" target="_blank">Unis OS Fundamentals An Introduction to Linux</a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>2h16min</td>
+    <tr>
+      <td><input name="Course" id="CB10" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB10">&nbsp;</label></td>
+      <td><b>Fundamentals of Unix & Shell scripting</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#summary/COURSES/CDE$459367:_ss_cca:lu_unsf_a04_it_enus" target="_blank">Unis OS Fundamentals: Network Administration </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>1h37min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB11" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB11">&nbsp;</label></td>
+      <td><b>Fundamentals of Unix & Shell scripting</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvRGF0YWFuZERhdGFiYXNlcy9EYXRhYmFzZURlc2lnbg.._fcpathe_#summary/COURSES/CDE$458978:_ss_cca:lu_unsf_a02_it_enus" target="_blank">Unis OS Fundamentals: managing Files and Directories </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>1h26min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB12" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB12">&nbsp;</label></td>
+      <td><b>Fundamentals of Unix & Shell scripting</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=browsecatalog/en/_fcpaths_L1NraWxsc29mdF9fTGlicmFyeV8xOWRueC9JVFNraWxsczEvT3Blcm5nU3lzcnZlcnMvVU5JWA.._fcpathe_#summary/COURSES/CDE$530347:_ss_cca:lu_unop_a08_it_enus" target="_blank">Shell Scripting </a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>59min</td>
+    </tr>
+  </table>
+
+  <p>
+		&nbsp;
+	</p>
+  <p>
+    &nbsp;
+  </p>
+  <strong>Fundamentals 2</strong><br>
+  <p>
+		&nbsp;
+	</p>
+
+  <table>
+  <tr class="heading">
+    <th></th>
+    <th>Topic</th>
+    <th>Course Link</th>
+    <th>Relevant Role</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB13" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB13">&nbsp;</label></td>
+    <td><b>Introduction to ETL</b></td>
+    <td><a href="https://dxc.percipio.com/courses/0d615330-a91c-11e7-b050-7a420a93a8e4/videos/0d615331-a91c-11e7-b050-7a420a93a8e4" target="_blank">Data Flow Implementation: </a></td>
+    <td class="mandatory">Mandatory</td>
+    <td>1h 6min</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB14" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB14">&nbsp;</label></td>
+    <td><b>Introduction to ETL</b> </td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$568886:_ss_cca:it_dsdslsdj_03_enus)" target="_blank">Data Silos, Lakes, & Streams: Sources, Visualizations, & ETL Operations -1h29min:</a>
+    <td class="mandatory">Mandatory</td>
+    <td>1hr 29mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB15" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB15">&nbsp;</label></td>
+    <td><b>Introduction to Cloud Computing & Azure Fundamentals</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$472964:_ss_cca:cl_cctf_a04_it_enus" target="_blank">Cloud Computing Fundamentals: Migrating to the Cloud (1h6min): </a></td>
+    <td class="mandatory">Mandatory</td>
+    <td>1hr 6mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB16" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB16">&nbsp;</label></td>
+    <td><b>Introduction to Devops and Docket/container</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$466692:_ss_cca:os_devo_a01_it_enus" target="_blank">DevOps Fundamentals: Tools, Technologies, and Infrastructures (1h56min):</a>
+    </td>
+    <td class="mandatory">Mandatory</td>
+    <td>1hr 56mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB17" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB17">&nbsp;</label></td>
+    <td><b>Introduction to Devops and Docket/container</b> </td>
+    <td><a href="https://dxc.percipio.com/courses/563596a6-101f-48ce-a8b3-320577620539/videos/d1f30671-4c93-48dc-bb98-26fe1dde2f82" target="_blank">DevOps with Docker: Container Management (57min):</a>
+    </td>
+    <td class="mandatory">Mandatory</td>
+    <td>57mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB18" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB18">&nbsp;</label></td>
+    <td><b>Introduction to Bigdata and Hadoop, map-reduce</b> </td>
+    <td>  <a href="https://dxc.percipio.com/courses/874bc490-2bb7-11e9-b42a-270cd150d688/videos/9aa9f570-2bb7-11e9-b42a-270cd150d688" target="_blank">Getting Started with Hadoop: Fundamentals & MapReduce (1h6min): </a>
+    </td>
+    <td class="mandatory">Mandatory</td>
+    <td>1hr 6mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB19" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB19">&nbsp;</label></td>
+    <td><b>NoSQL - MongoDB</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$459010:_ss_cca:df_nsql_a01_it_enus" target="_blank">NoSQL Concepts and Background (1h59min):</a></td>
+    <td class="mandatory">Mandatory</td>
+    <td>1hr 59mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB20" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB20">&nbsp;</label></td>
+    <td><b>NoSQL - MongoDB</b> </td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$510119:_ss_cca:df_mond_a01_it_enus" target="_blank">MongoDB: Installation Overview (38 min):</a>    </td>
+    <td class="mandatory">Mandatory</td>
+    <td>38mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB21" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB21">&nbsp;</label></td>
+    <td><b>NoSQL - MongoDB</b> </td>
+    <td><a href="https://dxc.percipio.com/courses/7ba95cea-7de1-11e7-9c68-3253b7063610/videos/7ba95ceb-7de1-11e7-9c68-3253b7063610" target="_blank">MongoDB: Write, Read, and Aggregate Data (56min):</a></td>
+    <td class="mandatory">Mandatory</td>
+    <td>56mins</td>
+  </tr>  
+  </table>
+    
+  <p>
+    &nbsp;
+  </p>
+  <p>
+    &nbsp;
+  </p>
+  <strong>Fundamentals 3</strong><br>
+  <p>
+    &nbsp;
+  </p>
+
+  <table>
+    <tr class="heading">
+      <th></th>
+      <th>Topic</th>
+      <th>Course Link</th>
+      <th>Relevant Role</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB22" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB22">&nbsp;</label></td>
+      <td><b>Python basics </b> </td>
+      <td>  <a href="https://dxc.percipio.com/courses/b4b2d402-350a-4b98-8e38-cd759a5444a5/videos/970f9c94-73b5-4d5f-8b5e-42362a2d6092" target="_blank">Getting Started with Python: Introduction (1h36min)</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 36mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB141" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB141">&nbsp;</label></td></td>
+      <td><b>Python Basics #1</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=summary/COURSES/os_dopy_a01_it_enus">Python Fundamentals course #1</a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 31mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB142" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB142">&nbsp;</label></td></td>
+      <td><b>Python Basics #2</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=summary/COURSES/pg_pyth_a01_it_enus">Python Fundamentals course #2</a></td>
+      <td class="mandatory">Mandatory</td>
+      <td>3 hrs 28mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB23" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB23">&nbsp;</label></td>
+      <td><b>Python  Basics</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action?path=summary/RESOURCES/pit_pg_pyth#summary/RESOURCES/CDE$518021:_ss_practicelabs2:pit_pg_pyth" target="_blank">Python Fundamentals (6hs Practice lab):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>6hrs</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB24" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB24">&nbsp;</label></td>
+      <td><b>Python for Datascience</b> </td>
+      <td>  <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$498572:_ss_cca:sd_pyds_a01_it_enus" target="_blank">IT - Python for Data Science - Introduction to Python for Data Science (2hs32mins)</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 32mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB25" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB25">&nbsp;</label></td>
+      <td><b>Python for Datascience</b> </td>
+      <td>  <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$504461:_ss_cca:sd_pyds_a02_it_enus" target="_blank">IT - Python for Data Science - Complex Data Engineering in Python (2hs41min)</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 41mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB26" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB26">&nbsp;</label></td>
+      <td><b>R Programming</b></td>
+      <td>   <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$456611:_ss_cca:pg_rprg_a01_it_enus" target="_blank">Introduction to R Programming (2hs39min): </a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 39mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB27" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB27">&nbsp;</label></td>
+      <td><b>R Programming</b></td>
+      <td>   <a href="https://dxc.percipio.com/courses/080c935b-3136-4323-8679-1a26b3f9ec96/videos/7f7d95b2-04eb-437b-917f-ec3505de18e6" target="_blank">Advanced Visualizations & Dashboards: Visualization Using R (39min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>39mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB28" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB28">&nbsp;</label></td>
+      <td><b>Scala Basics</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$470846:_ss_cca:sd_scal_a01_it_enus" target="_blank">IT - Scala: Introduction (2hs30min)</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 30mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB29" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB29">&nbsp;</label></td>
+      <td><b>Scala Basics</b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$486430:_ss_cca:sd_ussc_a01_it_enus" target="_blank">The Basics of Scalding Programming (2hs5min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 5mins</td>
+    </tr>
+  </table>
+
+
+  <p>
+    &nbsp;
+  </p>
+  <p>
+    &nbsp;
+  </p>
+  <strong>Business Analysis / Architecture</strong><br>
+  <p>
+    &nbsp;
+  </p>
+  <table>
+    <tr class="heading">
+      <th></th>
+      <th>Topic</th>
+      <th>Course Link</th>
+      <th>Relevant Role</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB30" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB30">&nbsp;</label></td>
+      <td><b>SDLC - Phasss and models (waterfall, V-model, agile) </b> </td>
+      <td>  <a href="https://dxc.percipio.com/courses/2b1142aa-8bde-4873-a15a-35ad3f72052c/videos/f997cb00-76b3-4dd4-a679-c3e33bdb701c" target="_blank">DEVASC: Software Development Methodologies (56min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>56 mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB31" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB31">&nbsp;</label></td>
+      <td><b>SDLC - Phasss and models (waterfall, V-model, agile) </b> </td>
+      <td>  <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$457138:_ss_cca:sd_wtfl_a01_it_enus" target="_blank">The Waterfall Software Development Model (1h41min): </a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 41mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB32" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB32">&nbsp;</label></td>
+      <td><b>SDLC - Phasss and models (waterfall, V-model, agile) </b></td>
+      <td>   <a href="https://dxc.percipio.com/courses/5608f052-b388-11e7-9c7a-4e99e0664338/videos/5608f053-b388-11e7-9c7a-4e99e0664338" target="_blank">Introduction to Agile Software Development (1h04min): </a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 4mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB33" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB33">&nbsp;</label></td>
+      <td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td>
+      <td>  <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$469561:_ss_cca:er_tgaf_a01_it_enus" target="_blank">TOGAF® Fundamentals - Enterprise Architecture Basics (1h58min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 58mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB34" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB34">&nbsp;</label></td>
+      <td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td>
+      <td>  <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$469593:_ss_cca:er_tgaf_a02_it_enus" target="_blank">TOGAF® Fundamentals - Content Framework and Capability Basics (2h1min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 1min</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB35" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB35">&nbsp;</label></td>
+      <td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td>
+      <td>  <a href="https://www.youtube.com/watch?v=PpsMZUSIk5M" target="_blank">Using ArchiMate in Enterprise Architect (17min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>17mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB36" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB36">&nbsp;</label></td>
+      <td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td>
+      <td>  <a href="https://www.youtube.com/watch?v=PUzMTr1x3zU" target="_blank">Getting Started with Enterprise Architect (14min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>14mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB37" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB37">&nbsp;</label></td>
+      <td><b>TOGAF in a day (demo of tools Archimate and SparxEA) </b></td>
+      <td>  <a href="https://www.youtube.com/watch?v=_O1DeuP8bBw" target="_blank">Getting Started with Enterprise Architect 13 (33mins):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>33mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB38" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB38">&nbsp;</label></td>
+      <td><b>Business case development: </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/5631ebf9-fea5-11e6-8638-0242c0a80b06/videos/a12bc050-2924-11e7-97d7-0242c0a8050b" target="_blank">Basic Budgeting for Non-financial Professionals (28min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>28mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB39" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB39">&nbsp;</label></td>
+      <td><b>Business case development: </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$260437:_ss_cca:pd_12_a05_bs_enin" target="_blank">Decision Making: Tools and Techniques (1h):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB40" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB40">&nbsp;</label></td>
+      <td><b>Business case development: </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/61489590-9d54-11e7-8901-d311cbcd3e34/videos/96fb8850-9d54-11e7-981c-e6485196e111" target="_blank">Managing with a Cost-control Mindset (31min): </a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>30mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB41" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB41">&nbsp;</label></td>
+      <td><b>Business case development: </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/24ff8a54-e4b1-11e6-a792-0242c0a80b09/videos/da9f46e0-290b-11e7-9844-0242c0a8080b" target="_blank">Responding Effectively to Risks (27min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>27mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB42" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB42">&nbsp;</label></td>
+      <td><b>Business case development: </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/42a58f07-ff7d-11e6-8638-0242c0a80b06/videos/42a5b617-ff7d-11e6-8638-0242c0a80b06?tab=overview" target="_blank">Identifying and Reducing Technical Debt ( Video 7min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>7mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB43" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB43">&nbsp;</label></td>
+      <td><b>Business case development: </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/56262c22-fea5-11e6-8638-0242c0a80b06/videos/eac14640-2910-11e7-9844-0242c0a8080b" target="_blank">Developing an Effective Business Case (29min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>29mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB44" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB44">&nbsp;</label></td>
+      <td><b>Business case development: </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/24ff8a62-e4b1-11e6-a792-0242c0a80b09/videos/eca19140-290b-11e7-b2c9-0242c0a80909" target="_blank">Preparing and Implementing a Business Plan (31min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>31mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB45" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB45">&nbsp;</label></td>
+      <td><b>Requirements Engineering, MoSCoW method et al. </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/4ac107b3-9a13-11e7-981c-e6485196e111/videos/4ac107b4-9a13-11e7-981c-e6485196e111" target="_blank">Business Analysis Overview (1h):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB46" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB46">&nbsp;</label></td>
+      <td> <b>Requirements Engineering, MoSCoW method et al. </b></td>
+      <td> <a href="https://dxc.percipio.com/courses/07922d0b-a2f8-49a1-bbc4-788e6c4a8cde/videos/ced553ba-574d-42bc-b555-d01ec79b9302" target="_blank">Software Requirements Planning (1h 3min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 3mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB47" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB47">&nbsp;</label></td>
+      <td><b>Requirements Engineering, MoSCoW method et al. </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/ffd9d5e1-cba4-4d30-b4c4-49a0c85cf08f/videos/0645ddd6-d557-4bbc-b9e1-505320535a78" target="_blank">Defining Priorities (4 min): </a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>4mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB48" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB48">&nbsp;</label></td>
+      <td><b>Agile - Scrum framework </b></td>
+      <td>  <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$473241:_ss_cca:ib_apmf_a01_it_enus" target="_blank">Agile Principles, Methodologies, and Mindset (2h34min): </a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 34mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB49" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB49">&nbsp;</label></td>
+      <td><b>Agile - Scrum framework </b></td>
+      <td>  <a href="https://dxc.percipio.com/courses/c9b72088-f1c9-482e-84db-325c66a15249/videos/219f1447-f756-4880-a464-4bd4e411ace2" target="_blank">Scrum Foundations: Transitioning to Scrum (47 min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>47mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB50" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB50">&nbsp;</label></td>
+      <td><b>Agile - Scrum framework </b></td>
+      <td>  <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$441327:_ss_cca:sd_spsc_a01_it_enus" target="_blank">Software Practices (SCRUM): SCRUM Roles (2h30min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 30mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB51" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB51">&nbsp;</label></td>
+      <td><b>Agile - Scrum framework </b></td>
+      <td>  <a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$458087:_ss_cca:sd_spsc_a02_it_enus" target="_blank">Software Practices (SCRUM): SCRUM Meetings (2h30min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>2hrs 30mins</td>
+    </tr>
+    </table>
+
+
+  
+  <p>
+    &nbsp;
+  </p>
+  <p>
+    &nbsp;
+  </p>
+  <strong>Agile / Regulatory / Data Architecture</strong><br>
+  <p>
+    &nbsp;
+  </p>
+
+  <table>
+    <tr class="heading">
+      <th></th>
+      <th>Topic</th>
+      <th>Course Link</th>
+      <th>Relevant Role</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB52" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB52">&nbsp;</label></td>
+      <td><b>Agile - Kanban framework (concepts and techniques) </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$485922:_ss_cca:sd_kafu_a01_it_enus" target="_blank">Kanban Fundamentals: Using Kanban in IT and Software Development (3hs40min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>3hrs 40mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB53" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB53">&nbsp;</label></td>
+      <td><b>Agile - Kanban framework - workshop </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/RESOURCES/CDE$501613:_ss_ja:oper_46_a02_bs_enus_jaoper_46_a02_bs_enust1601" target="_blank">Kanban Steps (job aid):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB54" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB54">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://dxc.percipio.com/courses/4d4c85e2-c0af-4a46-85b2-5926b38f578f/videos/8c11d61b-0cb6-45bc-902c-5e59ad53be85" target="_blank">Scaling Scrum: Choosing Scaled Agile Frameworks (58 min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>58mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB55" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB55">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://share.percipio.com/cd/25PHFTYaz" target="_blank">Data Regulations (video 4 min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>4mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB56" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB56">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$533844:_ss_cca:lchr_01_b66_lc_enuk" target="_blank">EU General Data Protection Regulation (UK) (25 min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>25mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB57" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB57">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$584130:_ss_cca:lchr_01_c03_lc_enuk" target="_blank">COMPLIANCE SHORT: GDPR (UK) (4 min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>4mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB58" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB58">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$370278:_ss_cca:lchp_01_a05_lc_enus" target="_blank">HIPAA - Security Rule for Covered Entities (24 min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>24mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB59" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB59">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$597081:_ss_cca:lchr_01_b87_lc_enus" target="_blank">PCI DSS Compliance (15min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>15mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB60" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB60">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$411736:_ss_cca:lchr_01_a54_lc_enuk" target="_blank">PCI Compliance Essentials in the UK (41 min)</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>41mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB61" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB61">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$250948:_ss_cca:lchr_01_a19_lc_enus" target="_blank">Sarbanes-Oxley: What You Need to Know (57 min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>57mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB62" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB62">&nbsp;</label></td>
+      <td><b>SAFe (Scaled Agile Framework) </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$424901:_ss_cca:fini_07_a01_bs_enus" target="_blank">Basel II and Basel III: An Overview (1h):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB63" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB63">&nbsp;</label></td>
+      <td><b>Data Architecture </b></td>
+      <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$495776:_ss_cca:df_gdmd_a02_it_enus" target="_blank">Generic Design and Modeling Databases: Logical and Physical Design (3hs)</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>3hrs</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB64" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB64">&nbsp;</label></td>
+      <td><b>Data Architecture </b></td>
+      <td><a href="https://dxc.percipio.com/courses/dfae0450-c8a6-11e8-89de-95da6d2052ad/videos/fcd5b370-c8a6-11e8-89de-95da6d2052ad" target="_blank">Data Warehouse Essential: Concepts (1h51min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 51mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB65" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB65">&nbsp;</label></td>
+      <td><b>Data Architecture </b></td>
+      <td><a href="https://dxc.percipio.com/courses/b0883410-c8a7-11e8-89de-95da6d2052ad/videos/c26199b0-c8a7-11e8-89de-95da6d2052ad" target="_blank">Data Warehouse Essential: Architecure Frameworks and Implementation (1h06min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 6mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB66" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB66">&nbsp;</label></td>
+      <td><b>Data Architecture </b></td>
+      <td><a href="https://dxc.percipio.com/courses/0d6264ab-a91c-11e7-b050-7a420a93a8e4/videos/0d6264ac-a91c-11e7-b050-7a420a93a8e4" target="_blank">Script Components (45min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>45mins</td>
+    </tr>
+    <tr>
+      <td><input name="Course" id="CB67" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB67">&nbsp;</label></td>
+      <td><b>Solution Architecture </b></td>
+      <td><a href="https://dxc.percipio.com/courses/7ad56361-c387-4163-9ed6-571890b250b1/videos/9cee99b1-d558-439c-8424-91596a2acd26" target="_blank">Enterprise Architecture: Architectural Principles & Patterns (1h35min):</a>
+      </td>
+      <td class="mandatory">Mandatory</td>
+      <td>1hr 43mins</td>
+    </tr>
+  </table>
+
+
+<p>
+  &nbsp;
+</p>
+<p>
+  &nbsp;
+</p>
+<strong>Statistics</strong><br>
+<p>
+  &nbsp;
+</p>
+<table>
+  <tr class="heading">
+    <th></th>
+    <th>Topic</th>
+    <th>Course Link</th>
+    <th>Relevant Role</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB68" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB68">&nbsp;</label></td>
+    <td><b>Introduction to Descriptive Statistics </b></td>
+    <td><a href="https://dxc.percipio.com/courses/cbc01ec0-0f40-11e9-955f-dfb2ccb6c8a7/videos/e899d4f0-0f40-11e9-955f-dfb2ccb6c8a7" target="_blank">Data Science Statistics: Simple Descriptive Statistics (1h14min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>1hr 14mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB69" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB69">&nbsp;</label></td>
+    <td><b>Introduction to Descriptive Statistics </b></td>
+    <td><a href="https://dxc.percipio.com/courses/55f7d950-b388-11e7-9c7a-4e99e0664338/videos/55f7d951-b388-11e7-9c7a-4e99e0664338" target="_blank">Correlation & Regression (33min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>33mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB70" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB70">&nbsp;</label></td>
+    <td><b>Introduction to Descriptive Statistics </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/RESOURCES/CDE$486129:_ss_ja:oper_40_a02_bs_enus_jaoper_40_a02_bs_enust501" target="_blank">Statistics Tools (job aid):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB71" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB71">&nbsp;</label></td>
+    <td><b>Introduction to Probability </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$414084:_ss_cca:oper_26_a02_bs_enus" target="_blank">Basic Probability and Statistical Distributions in Six Sigma (1h42min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>1hr 42mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB72" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB72">&nbsp;</label></td>
+    <td><b>Introduction to Probability </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/RESOURCES/CDE$539378:_ss_ja:apr_03_a02_bs_enus_jaapr_03_a02_bs_enust1201" target="_blank">Probability Formulas (job aid):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB73" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB73">&nbsp;</label></td>
+    <td><b>Conditional probability, Bayes theorem </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$522959:_ss_cca_t:df_prma_a03_it_enus_t31" target="_blank">Conditional Probability and Bayes Rule (video 5 min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>5mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB74" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB74">&nbsp;</label></td>
+    <td><b>Conditional probability, Bayes theorem </b></td>
+    <td><a href="https://dxc.percipio.com/courses/929bc62c-033e-4850-9dcd-a6a43a7ee192/videos/717faad5-df6a-4904-ba4b-fe607f1757f8" target="_blank">Bayesian Methods: Bayesian Concepts & Core Components (1h5min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>1hr 5mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB75" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB75">&nbsp;</label></td>
+    <td><b>Introduction to inferential statistics, probability distributions </b></td>
+    <td><a href="https://dxc.percipio.com/courses/5198b010-0f42-11e9-955f-dfb2ccb6c8a7/videos/97555180-0f42-11e9-955f-dfb2ccb6c8a7" target="_blank">Data Science Statistics: Inferential Statistics (1h6min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>1hr 6mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB76" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB76">&nbsp;</label></td>
+    <td><b>Introduction to inferential statistics, probability distributions </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/RESOURCES/CDE$414126:_ss_sb:oper_26_a02_bs_enus_sboper_26_a02_bs_enus051052" target="_blank">Probability Distribution (skillbrief):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB77" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB77">&nbsp;</label></td>
+    <td><b>Missing Value Treatment </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$570645:_ss_cca_t:it_mlfupddj_01_enus_t49" target="_blank">Missing Values and Outlier Management (video 4 min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>4mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB78" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB78">&nbsp;</label></td>
+    <td><b>Missing Value Treatment </b></td>
+    <td><a href="https://dxc.percipio.com/courses/aa5a3440-0f41-11e9-955f-dfb2ccb6c8a7/videos/cace4f40-0f41-11e9-955f-dfb2ccb6c8a7" target="_blank">Data Science Statistics: Common Approaches to Sampling Data (50 min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>50mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB79" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB79">&nbsp;</label></td>
+    <td><b>Feature Engineering </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$613387:_ss_cca_t:it_mlmdbpdj_02_enus_t56" target="_blank">Feature Engineering Rules (video 4 min)</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>4mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB80" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB80">&nbsp;</label></td>
+    <td><b>Feature Engineering </b></td>
+    <td><a href="https://dxc.percipio.com/courses/07a8b050-2b94-11e8-853f-8d6ca00f7963/videos/48d76530-2b94-11e8-853f-8d6ca00f7963" target="_blank">GCP Engineering and Streaming Architecture (1h15min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>1hr 15mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB81" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB81">&nbsp;</label></td>
+    <td><b>Feature Engineering </b></td>
+    <td><a href="https://www.youtube.com/watch?v=CXDfQdYpGGw" target="_blank">What Is Feature Engineering For Machine Learning? (Youtube 4min):</a></td>
+    <td class="Optional">Data Science </td>
+    <td>4mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB82" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB82">&nbsp;</label></td>
+    <td><b>Feature Engineering (ONLY CHAPTER 1,2 and 5) </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/BOOKS/RW$4872968:_ss_book:138735" target="_blank">Feature Engineering for Machine Learning and Data Analytics Book (Chapters 1,2 & 5)</a></td>
+    <td class="Optional">Data Science </td>
+    <td>N/A</td>
+  </tr>
+</table>
+
+
+<!--PROJECT PLANNING-------------------------------------------------------------->
+<p>
+  &nbsp;
+</p>
+<p>
+  &nbsp;
+</p>
+<strong>Project Planning, Roadmapping, CI/CD</strong><br>
+<p>
+  &nbsp;
+</p>
+
+
+<table>
+  <tr class="heading">
+    <th></th>
+    <th>Topic</th>
+    <th>Course Link</th>
+    <th>Relevant Role</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB83" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB83">&nbsp;</label></td>
+    <td><b>Project planning, roadmapping, milestones, deliverables.</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$519496:_ss_cca:apj_17_a01_bs_enus" target="_blank">Project Initiation and Planning (PMBOK® Guide Sixth Edition) (1h12min):</a>    </td>
+    <td class="Optional">Project Management </td>
+    <td>1hr 9mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB84" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB84">&nbsp;</label></td>
+    <td><b>Project planning, roadmapping, milestones, deliverables.  </b></td>
+    <td><a href="https://www.youtube.com/watch?v=q7fl6pOti_Y" target="_blank">Time Cost Trade-Offs (Youtube video 10 min):</a></td>
+    <td class="Optional">Project Management </td>
+    <td>10mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB85" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB85">&nbsp;</label></td>
+    <td><b>Project planning, roadmapping, milestones, deliverables.  </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$596548:_ss_cca:ds_msprod_04_enus" target="_blank">Project 2019: Creating & Organizing Tasks. (31 min):</a>    </td>
+    <td class="Optional">Project Management </td>
+    <td>36mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB86" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB86">&nbsp;</label></td>
+    <td><b>Project planning, roadmapping, milestones, deliverables.  </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$590843:_ss_cca:ds_msprod_05_enus" target="_blank">Project 2019: Managing Tasks (26 min):</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>26mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB87" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB87">&nbsp;</label></td>
+    <td><b>CI/CD, Jenkins, Maven </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$614372:_ss_cca:it_docicddj_01_enus" target="_blank">CI/CD Implementation for DevOps (1h28min):</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>1hr 35mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB88" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB88">&nbsp;</label></td>
+    <td><b>CI/CD, Jenkins, Maven </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$614384:_ss_cca_t:it_docicddj_01_enus_t70" target="_blank">CI/CD Using GitLab</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>8mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB89" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB89">&nbsp;</label></td>
+    <td><b>CI/CD, Jenkins, Maven </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$541330:_ss_cca_t:os_dojk_a02_it_enus_t36" target="_blank">Working with Maven Build Jobs for Jenkins (video 6 min)</a></td>
+    <td class="Optional">Project Management </td>
+    <td>6mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB90" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB90">&nbsp;</label></td>
+    <td><b>CI/CD, Jenkins, Maven </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$470655:_ss_cca:sd_jenk_a01_it_enus" target="_blank">Working with Jenkins: Fundamentals (2hs25min):</a></td>
+    <td class="Optional">Project Management </td>
+    <td>2hrs 25mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB91" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB91">&nbsp;</label></td>
+    <td><b>CI/CD, Jenkins, Maven </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$466324:_ss_cca:sd_apma_a01_it_enus" target="_blank"> Getting Started with Maven (2hs22min):</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>2hrs 22mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB92" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB92">&nbsp;</label></td>
+    <td><b>Kubernetes and Docker</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/VIDEOS/RW$4845188:_ss_video:121605" target="_blank">Kubernetes: Introduction to Docker (video 4 min)</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>4mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB93" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB93">&nbsp;</label></td>
+    <td><b>Kubernetes and Docker</b></td>
+    <td><a href="https://dxc.percipio.com/courses/e153e420-0d01-11e8-a73a-2deba30e2d97/videos/0844ea70-0d02-11e8-a73a-2deba30e2d97" target="_blank">Introduction to Kubernetes (1h21min): </a>
+    </td>
+    <td class="Optional">Project Management</td>
+    <td>1hr 19mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB94" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB94">&nbsp;</label></td>
+    <td><b>Kubernetes and Docker</b></td>
+    <td><a href="https://dxc.percipio.com/courses/7a592730-c553-11e7-b9ae-598d1762e8ac/videos/fbf4a080-c553-11e7-b2a7-6e0a2268f1ba" target="_blank">Docker Introduction (1h7min):</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>1hr 5mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB95" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB95">&nbsp;</label></td>
+    <td><b>Kubernetes and Docker</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$633308:_ss_cca_t:it_cokmcldj_01_enus_t35" target="_blank">Docker vs. Kubernetes (video 5 min):</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>5mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB96" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB96">&nbsp;</label></td>
+    <td><b>Kubernetes and Docker</b></td>
+    <td><a href="https://dxc.percipio.com/courses/25e4fdc0-d6bc-11e8-b39c-2f509ee582fb/videos/107bec40-d6bd-11e8-b39c-2f509ee582fb" target="_blank">DevOps with Ansible: Overview (46 min)</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>50mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB97" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB97">&nbsp;</label></td>
+    <td><b>Kubernetes and Docker</b></td>
+    <td><a href="https://dxc.percipio.com/courses/a94c2800-ecac-11e7-8181-d3c41c82a4f4/videos/1f59bd20-ecb5-11e7-a56e-01a6bce229b9" target="_blank">Introduction to Automated Testing with Selenium (47min):</a>
+    </td>
+    <td class="Optional">Project Management </td>
+    <td>45mins</td>
+  </tr>
+</table>
+
+
+
+
+<!--ML AND GCP------------------------------------------------------------------------------------------------------------------------------------>
+<p>
+  &nbsp;
+</p>
+<p>
+  &nbsp;
+</p>
+<strong>ML & GCP</strong><br>
+<p>
+  &nbsp;
+</p>
+<table>
+  <tr class="heading">
+    <th></th>
+    <th>Topic</th>
+    <th>Course Link</th>
+    <th>Relevant Role</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB98" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB98">&nbsp;</label></td>
+    <td><b>Machine Learning I  </b></td>
+    <td><a href="https://towardsdatascience.com/supervised-unsupervised-and-deep-learning-aa61a0e5471c" target="_blank">Supevised, Unsupervised and Deep Learning:</a></td>
+    <td class="Optional">Data Science </td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB99" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB99">&nbsp;</label></td>
+    <td><b>Machine Learning I  </b></td>
+    <td><a href="https://dxc.percipio.com/courses/560bfd83-b388-11e7-9c7a-4e99e0664338/videos/560bfd84-b388-11e7-9c7a-4e99e0664338" target="_blank">Introduction to Machine Learning and Supervised Learning</a></td>
+    <td class="Optional">Data Science </td>
+    <td>54 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB100" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB100">&nbsp;</label></td>
+    <td><b>Machine Learning I  </b></td>
+    <td><a href="https://dxc.percipio.com/courses/e9698d0b-1b1f-4bae-9d46-59e7bfeed269/videos/a766c34d-2eb2-406d-a09b-b505872f689a" target="_blank">Evaluating Current and Future AI Technologies and Frameworks </a></td>
+    <td class="Optional">Data Science </td>
+    <td>45 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB101" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB101">&nbsp;</label></td>
+    <td><b>Machine Learning I  </b></td>
+    <td><a href="https://dxc.percipio.com/courses/4b1805aa-c958-11e7-8c81-9212ca48e307/videos/4b1805ab-c958-11e7-8c81-9212ca48e307" target="_blank">Applying Machine Learning (39mins)</a></td>
+    <td class="Optional">Data Science </td>
+    <td>39mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB102" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB102">&nbsp;</label></td>
+    <td><b>Machine Learning I  </b></td>
+    <td><a href="https://dxc.percipio.com/courses/7e46dc80-2e98-11e8-b144-738597fc0726/videos/0d914ba0-2e99-11e8-b144-738597fc0726" target="_blank">Machine Learning with Tensorflow and Cloud ML (1hr 26 mins)</a></td>
+    <td class="Optional">Data Science </td>
+    <td>1hr 26mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB103" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB103">&nbsp;</label></td>
+    <td><b>Machine Learning I  </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$552528:_ss_cca_t:it_sdaidt_01_enus_t35" target="_blank">Tensorflow for Machine Learning (5 mins)</a></td>
+    <td class="Optional">Data Science </td>
+    <td>5mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB104" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB104">&nbsp;</label></td>
+    <td><b>Machine Learning I  </b></td>
+    <td><a href="https://dxc.percipio.com/courses/22897d90-2888-11e9-9403-233c604f89d1/videos/3f9407c0-2888-11e9-9403-233c604f89d1" target="_blank">Deep Learning with Keras (2hr 3mins)</a></td>
+    <td class="Optional">Data Science </td>
+    <td>2hrs 3mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB105" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB105">&nbsp;</label></td>
+    <td><b>Machine Learning I  </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$640094:_ss_cca_t:it_aikeradj_01_enus_t56" target="_blank">Machine Learning with Keras (2mins)</a></td>
+    <td class="Optional">Data Science </td>
+    <td>2mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB106" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB106">&nbsp;</label></td>
+    <td><b>Machine Learning II  </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$525345:_ss_cca_t:sd_exml_a03_it_enus_t4" target="_blank">What is Unsupervised Learning? (Video 2 min):</a></td>
+    <td class="Optional">Data Science </td>
+    <td>2mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB107" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB107">&nbsp;</label></td>
+    <td><b>Machine Learning II  </b></td>
+    <td><a href="https://dxc.percipio.com/courses/560c4ba4-b388-11e7-9c7a-4e99e0664338/videos/560c4ba5-b388-11e7-9c7a-4e99e0664338" target="_blank">Unsupervised Learning (31 min):</a>    </td>
+    <td class="Optional">Data Science </td>
+    <td>31mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB108" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB108">&nbsp;</label></td>
+    <td><b>Machine Learning II  </b></td>
+    <td><a href="https://dxc.percipio.com/courses/c147dbd7-8f40-430f-b5dd-e420498bdeba/videos/2ac59bbd-e38b-45c1-814c-5cbecb0cb506" target="_blank">Applied Deep Learning: Unsupervised Data (1h32 min):</a></td>
+    <td class="Optional">Data Science </td>
+    <td>1hr 32mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB109" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB109">&nbsp;</label></td>
+    <td><b>Machine Learning II  </b></td>
+    <td><a href="https://www.youtube.com/watch?v=edM0_C4j6R0" target="_blank">Deep Learning with Tensorflow - Introduction to Unsupervised Learning (Youtube video 2 min):</a></td>
+    <td class="Optional">Data Science </td>
+    <td>2mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB110" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB110">&nbsp;</label></td>
+    <td><b>Machine Learning II  </b></td>
+    <td><a href="https://www.youtube.com/watch?v=i2DjVin-hk0" target="_blank">Deep Learning with PyTorch: Computer Vision Motivation| packtpub.com (Youtube video 5 min):</a>    </td>
+    <td class="Optional">Data Science </td>
+    <td>5mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB111" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB111">&nbsp;</label></td>
+    <td><b>Google cloud: Architecture, storage and compute options, migrating data to Google cloud </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$506091:_ss_cca:cl_gcpf_a01_it_enus" target="_blank">Google Cloud (1h23min):</a>    </td>
+    <td class="Optional">Data Science </td>
+    <td>1hr 23mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB112" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB112">&nbsp;</label></td>
+    <td><b>Google cloud: Architecture, storage and compute options, migrating data to Google cloud </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$536866:_ss_cca:it_clgcar_05_enus" target="_blank">Google Cloud Data Storage (59 min):</a></td>
+    <td class="Optional">Data Science </td>
+    <td>59mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB113" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB113">&nbsp;</label></td>
+    <td><b>Google cloud: Architecture, storage and compute options, migrating data to Google cloud </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$506987:_ss_cca_t:cl_gsql_a02_it_enus_t22" target="_blank">Connecting Through Google Cloud Compute (video 4 min):</a>
+    </td>
+    <td class="Optional">Data Science </td>
+    <td>4mins</td>
+  </tr>
+</table>
+
+
+<!--AWS & ETL------------------------------------------------------>
+<p>
+  &nbsp;
+</p>
+<p>
+  &nbsp;
+</p>
+<strong>AWS & ETL</strong><br>
+<p>
+  &nbsp;
+</p>
+
+<table>
+  <tr class="heading">
+    <th></th>
+    <th>Topic</th>
+    <th>Course Link</th>
+    <th>Relevant Role</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB114" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB114">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=27394" target="_blank">What is Artificial Intelligence</a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB115" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB115">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/eLearning?id=27052" target="_blank">Machine Learning for Business Challenges</a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>1 hr</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB116" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB116">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/eLearning?id=20294" target="_blank">Machine Learning Terminology and Process</a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>1 hr</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB117" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB117">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=27165" target="_blank">Introduction to AWS Marketplace - Machine Learning Category</a></td>
+    <td  class="Optional">Data Engineering  </td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB118" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB118">&nbsp;</label></td>
+    <td><b>ETL with Talend </b></td>
+    <td><a href="https://dxc.percipio.com/courses/55f95ff4-b388-11e7-9c7a-4e99e0664338/videos/55f95ff5-b388-11e7-9c7a-4e99e0664338?tab=overview" target="_blank">Talend 6.4.1: Installation & Introduction </a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>59mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB119" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB119">&nbsp;</label></td>
+    <td><b>ETL with Talend </b></td>
+    <td><a href="https://dxc.percipio.com/courses/df850c00-2f92-11e9-9f0a-4d6965a87299/videos/f499c680-2f92-11e9-9f0a-4d6965a87299" target="_blank">Data Engineering: Data Engineering Getting Started </a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>51mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB120" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB120">&nbsp;</label></td>
+    <td><b>ETL with Talend </b></td>
+    <td><a href="https://dxc.percipio.com/courses/55fa2336-b388-11e7-9c7a-4e99e0664338/videos/55fa2337-b388-11e7-9c7a-4e99e0664338" target="_blank">Talend 6.4.1: Data Mapping </a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>1hr 18mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB121" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB121">&nbsp;</label></td>
+    <td><b>ETL with Talend </b></td>
+    <td><a href="https://dxc.percipio.com/courses/55f9fc2e-b388-11e7-9c7a-4e99e0664338/videos/55f9fc2f-b388-11e7-9c7a-4e99e0664338" target="_blank">Talend 6.4.1: Transforming Data </a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>2hrs 15mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB122" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB122">&nbsp;</label></td>
+    <td><b>ETL with Talend </b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$523021:_ss_cca:df_tadi_a02_it_enus" target="_blank">Working with Data Mapping, Jobs and Automation </a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>2hrs 17mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB123" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB123">&nbsp;</label></td>
+    <td><b>ETL with Talend </b></td>
+    <td><a href="https://dxc.percipio.com/courses/55fa234a-b388-11e7-9c7a-4e99e0664338/videos/55fa234b-b388-11e7-9c7a-4e99e0664338" target="_blank">Talend 6.4.1: Job Orchestration & Process Automation </a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>59mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB124" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB124">&nbsp;</label></td>
+    <td><b>ETL with Talend </b></td>
+    <td><a href="https://dxc.percipio.com/courses/f1023005-65bc-47b3-ae7c-daff760f75b6/videos/de1ad7a9-8d0a-4166-8d23-031177127fbf" target="_blank">CloudOps Interoperability: Inter-cloud Integration & Implementation </a></td>
+    <td class="Optional">Data Engineering  </td>
+    <td>1hr 25mins</td>
+  </tr>
+</table>
+<br>
+<br>
+
+<!--AWS CERTS------------------------------------------------------>
+<p>
+  &nbsp;
+</p>
+<p>
+  &nbsp;
+</p>
+<strong>AWS</strong><br>
+<p>
+  &nbsp;
+</p>
+
+<table>
+  <tr class="heading">
+    <th></th>
+    <th>Topic</th>
+    <th>Course Link</th>
+    <th>Relevant Role</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB125" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB125">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=15887" target="_blank">Introduction to Amazon Rekognition</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB126" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB126">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=27179" target="_blank">Introduction to AWS DeepLens</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB127" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB127">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=15886" target="_blank">Introduction to Amazon Polly</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB128" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB128">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=15886" target="_blank">Introduction to Amazon Lex</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB129" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB129">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=19443" target="_blank">Introduction to Amazon Transcribe</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB130" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB130">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=19442" target="_blank">Introduction to Amazon Translate</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB131" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB131">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=16626" target="_blank">Introduction to Amazon Comprehend</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB132" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB132">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=27159" target="_blank">Introduction to Amazon Comprehend Medical</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB133" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB133">&nbsp;</label></td>
+    <td><b>AWS</b></td>
+    <td><a href="https://www.aws.training/Details/Video?id=27163" target="_blank">Introduction to Amazon Forecast</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>10 mins</td>
+  </tr>
+</table>
+<br>
+
+<!--AZURE CERTS------------------------------------------------------>
+
+<p>
+  &nbsp;
+</p>
+<p>
+  &nbsp;
+</p>
+<strong>Azure</strong><br>
+<p>
+  &nbsp;
+</p>
+
+<table>
+  <tr class="heading">
+    <th></th>
+    <th>Topic</th>
+    <th>Course Link</th>
+    <th>Relevant Role</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB134" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB134">&nbsp;</label></td>
+    <td><b>Azure</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$612743:_ss_cca_t:it_mlmdesdj_02_enus_t35" target="_blank">Working with Azure ML Studio </a></td>
+    <td class="Recommended">Recommended</td>
+    <td>5 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB135" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB135">&nbsp;</label></td>
+    <td><b>Azure</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$585179:_ss_cca:it_dfpdsm_08_enus" target="_blank">Cloud Data Science: using Algorithms in Azure ML Studio</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>46 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB136" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB136">&nbsp;</label></td>
+    <td><b>Azure</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$507033:_ss_cca:cl_imas_a01_it_enus" target="_blank"> Azure Storage and the Azure Environment</a></td>
+    <td class="Recommended">Recommended</td>
+    <td>1hr 59mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB137" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB137">&nbsp;</label></td>
+    <td><b>Azure</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$638645:_ss_cca:it_clmaad2020_07_enus" target="_blank">AZ-304 - Microsoft Azure Architect Design: Azure Database Solution Design  </a></td>
+    <td class="Recommended">Recommended</td>
+    <td>44 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB138" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB138">&nbsp;</label></td>
+    <td><b>Azure</b></td>
+    <td><a href="https://databricks.com/intro-to-machine-learning-for-developers-on-azure-databricks" target="_blank">Intro to ML for Developers on Azure Databricks </a></td>
+    <td class="Recommended">Recommended</td>
+    <td>44 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB139" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB139">&nbsp;</label></td>
+    <td><b>Azure</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$636690:_ss_cca:it_clazat2020_17_enus" target="_blank">AZ-303 - Microsoft Azure Architect Technologies: Migrating to Azure </a></td>
+    <td class="Recommended">Recommended</td>
+    <td>46 mins</td>
+  </tr>
+  <tr>
+    <td><input name="Course" id="CB140" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB140">&nbsp;</label></td>
+    <td><b>Azure</b></td>
+    <td><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$507473:_ss_cca:df_sqlp_a08_it_enus" target="_blank">Deploying Applications to Microsoft Azure SQL Databases </a></td>
+    <td class="Recommended">Recommended</td>
+    <td>1hr 36mins</td>
+  </tr>
+</table>
+
+
+
+
+<!-- Do We Need these?
+<input id="CB142" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB142">&nbsp;</label><b>ETL with Talend </b><a href="https://www.talend.com/" target="_blank">Register here</a>
+<input id="CB143" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB143">&nbsp;</label><b>ETL with Talend </b><a href="https://www.talend.com/products/talend-open-studio/" target="_blank">Download this tool.</a>
+<input id="CB144" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB144">&nbsp;</label><b>ETL with Talend </b><a href="https://academy.talend.com/learn/public/learning_plan/view/9/talend-cloud-essentials" target="_blank">Free Trial Training - but Time limited path (only days from register to complete)</a>
+-->
+
+
+<p>
+	&nbsp;
+</p>
+	<p>
+	&nbsp;
+</p>
+	<p>
+	&nbsp;
+</p>
+	<p>
+	&nbsp;
+</p>
+	<p>
+	&nbsp;
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	&nbsp;
+</p>
+
+</div>
+<p>
+	&nbsp;
+</p>
+
+</div>
+
+<p>
+	&nbsp;
+</p>
+
+<div class="footer">
+<!--   <p>Designed & Developed by <a id="link" href="https://atuljha23.github.io/">Atul Kumar Jha</a> , Updated and maintained by Andrew Ward & Ryan Sers </p> 
+  <p>For Queries related to Forms Contact: Amy Maden, Andrew Ward, Erin Dunne or Ryan Sers <br>For any technical difficulties contact ryan.sers@dxc.com .<br><span>&#169;</span>
+      DXC Technology 2021</p> -->
+
+      <p>For Queries related to Forms Contact: Erin Dunne or Ryan Sers <br>For any technical difficulties contact ryan.sers@dxc.com <br>       <span>&#169;</span>
+        DXC Technology 2021</p>
+</div>
+
+<script src="script.js?1"></script>
+<script src="alertify.min.js"></script>
+    </body>
+</html>

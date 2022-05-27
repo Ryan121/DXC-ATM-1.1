@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Homepage - MLOps </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://kit.fontawesome.com/6584fe6fb3.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="alertify.min.css"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body onLoad="timeRefresh(72000000);">
+<section>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="DXC Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Technical</a></li>
+                <li><a href="./MLOps.html">MLOps+</a></li>
+                <li><a href="./data_engineering.html">Data Engineering+</a></li>
+                <li><a href="./consulting.html">Consulting</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Update other Information</button>
+                    <div class="dropdown-content">
+                        <li><a href="update.html" target="_blank"> Personal Information</a></li>
+                        <li><a href="shadowing.html" target="_blank">Shadowing Work</a></li>
+                        <li><a href="fulltime.html" target="_blank">Full-Time Work</a></li>
+                        <li><a href="skills.html" target="_blank">My Skills</a></li>
+                        <li><a href="training.html" target="_blank">My Training</a></li>
+                    </div>
+                </div>
+
+                <li><a href="./faq.html" target="_blank">FAQ</a></li>
+                <li><a href="https://github.dxc.com/ajha62/DXC-Analytics-Bootcamp-Training" target="_blank">Contribute</a></li>
+                <!-- <li><a href="./adminlogin.html">Admin</a></li> -->
+            </ul>
+        </nav>
+        <div class="menu">
+            <a href="#" class="menu-trigger">Menu</a>
+        </div>
+    </header>
+    <p>
+        &nbsp;
+    </p>
+    <p>
+        &nbsp;
+    </p>
+</section>
+<div class="grid-container">
+    <div class="relative">
+        <h2 class="para animate__animated animate__backInLeft"><b>Your Details</b></h2>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-user-graduate" style="color: #339af0;"></i> Welcome: <span id="welcometext"></span></p>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-id-card-alt" style="color: #339af0;"></i> Employee ID:<span id="registeredid"></span><span style="padding-left:10px"> <button onclick="copythis()">Copy to clipboard</button></span>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-calendar-day" style="color: #339af0;"></i> Bootcamp Started On: <span id="registereddate"></span> </p>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-graduation-cap" style="color: #339af0;"></i> Degree: <span id="registereddegree"></span> </p>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-briefcase" style="color: #339af0;"></i> Work Status: <span id="registeredstatus"></span></p>
+        <p class="para animate__animated animate__backInLeft"><i class="fas fa-envelope" style="color: #339af0;"></i> Registered Email: <span id="registeredemail"></span></p>
+	<a href="essentials.html" target="_blank"><button class="button button5 space animate__animated animate__lightSpeedInRight"><b>Update weekly information.</b></button></a>
+    </div>
+    <div>
+        <p class="para"> <div style="text-align: center; color: red"><b class=""> New User: <i class=""></i> </b></div><br> <ul>
+        <li class="para">Ensure you are logged in to Microsoft (use the button below to log-in to Microsoft).</li>
+        <li class="para">Ensure <b>Your details</b> are filled properly, and no fields are left behind. You can use the <b>Reset Your Details</b> button for this.</li>
+        <li class="para">YOU MUST check off the <b>Bootcamp Modules</b> you have completed, then click <b>Send your weekly update</b> before updating any other data.</li>
+        <li class="para">Complete all forms in the <b>Update your Information</b> drop-down menu above.</li>
+    </ul></p>
+    </div>
+    <div>
+        <p class="para"> <div style="text-align: center; color: green"><b class=""> Returning User: <i class=""></i> </b></div><br> <ul>
+        <li class="para">Ensure you are logged in to Microsoft (use the button below to log-in to Microsoft).</li>
+        <li class="para">Ensure <b>Your details</b> are visible on the portal and are correct. You can use the <b>Reset Your Details</b> button to update these details.</li>
+        <li class="para">You only need to send your weekly update if your bootcamp progress has changed since last week.</li>
+        <li class="para">Update any forms in the <b>Update your Information</b> drop-down menu where any data on that form has changed</li>
+    </ul></p>
+    </div>
+    <div class="progress-pie-chart">
+        <div class="ppc-progress">
+            <div class="ppc-progress-fill"></div>
+        </div>
+        <div class="ppc-percents">
+            <div class="pcc-percents-wrapper">
+                <span>%</span>
+                <p class="p1 animate__animated animate__flash">Of Total Modules Completed</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>
+	&nbsp;
+</p>
+<br>
+<div class="highlight">
+<p>
+  <h2>Last Updated on 04/02/2022 - Key Changes & Instructions</h2>
+  </p>
+<br>
+<ul>
+  <li>Certification Tracker added - Please check the boxes of the certifications (on the Technical page) you have completed 
+    and upload proof of certification via the gold 'Submit a certification certificate' button seen below.</li>
+  <br>
+  <li>A bootcamp update email prompt has been added - An email has been scheduled to be sent daily 
+    to users who have not sent an update email for more than 7 days if they have not yet completed the bootcamp. 
+  </li>
+  <br>
+</ul>
+</div>
+
+<p>
+  &nbsp;
+</p>
+<div style="text-align: center">
+
+<button class="submit button button5 animate__animated animate__lightSpeedInRight" onclick="sendMail('Technical')">Send your bootcamp update.</button>
+
+<a href="https://forms.office.com/r/g443E4FntF" target="_blank"><button class="cert_button submit button button5 space animate__animated animate__lightSpeedInRight">Submit a certification certificate.</button></a>
+
+<a href="https://login.microsoftonline.com" target="_blank"><button class="button button5 space animate__animated animate__lightSpeedInRight">Login to Microsoft.</button></a>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="popup()">Reset Your Details.</button>
+</div>
+
+
+<!--
+<button class="submit button button5 animate__animated animate__lightSpeedInRight" onclick="sendMail()">Send your weekly update.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick()">Reset your name and email.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClickEmp()">Reset your employee ID.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick2()">Reset your working status.</button>
+<button class="button button5 space animate__animated animate__lightSpeedInRight" onclick="clearClick3()">Reset your starting date and degree.</button>
+
+-->
+<p>
+    &nbsp;
+</p>
+
+<h1 class="para"><b>MLOps BOOTCAMP+ MODULES</b></h1>
+<p>
+    &nbsp;
+</p>
+<div class="checkbox">
+    <p>
+        <strong>Unit 1 - ML & GCP</strong>
+    </p>
+    <p>
+        &nbsp;
+    </p>
+    <div id="checks">
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB98" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB98">&nbsp;</label></td><td><b>Machine Learning I  </b></td>  <td class="link"><a href="https://towardsdatascience.com/supervised-unsupervised-and-deep-learning-aa61a0e5471c" target="_blank">Supevised, Unsupervised and Deep Learning:</a></td></tr>
+        <tr><td><input name="Course" id="CB99" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB99">&nbsp;</label></td><td><b>Machine Learning I  </b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/560bfd83-b388-11e7-9c7a-4e99e0664338/videos/560bfd84-b388-11e7-9c7a-4e99e0664338" target="_blank">Introduction to Machine Learning and Supervised Learning</a></td></tr>
+        <tr><td><input name="Course" id="CB100" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB100">&nbsp;</label></td><td><b>Machine Learning I  </b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/e9698d0b-1b1f-4bae-9d46-59e7bfeed269/videos/a766c34d-2eb2-406d-a09b-b505872f689a" target="_blank">Evaluating Current and Future AI Technologies and Frameworks </a></td></tr>
+        <tr><td><input name="Course" id="CB101" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB101">&nbsp;</label></td><td><b>Machine Learning I  </b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/4b1805aa-c958-11e7-8c81-9212ca48e307/videos/4b1805ab-c958-11e7-8c81-9212ca48e307" target="_blank">Applying Machine Learning (39mins)</a></td></tr>
+        <tr><td><input name="Course" id="CB102" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB102">&nbsp;</label></td><td><b>Machine Learning I  </b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/7e46dc80-2e98-11e8-b144-738597fc0726/videos/0d914ba0-2e99-11e8-b144-738597fc0726" target="_blank">Machine Learning with Tensorflow and Cloud ML (1hr 26 mins)</a></td></tr>
+        <tr><td><input name="Course" id="CB103" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB103">&nbsp;</label></td><td><b>Machine Learning I  </b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$552528:_ss_cca_t:it_sdaidt_01_enus_t35" target="_blank">Tensorflow for Machine Learning (5 mins)</a></td></tr>
+        <tr><td><input name="Course" id="CB104" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB104">&nbsp;</label></td><td><b>Machine Learning I  </b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/22897d90-2888-11e9-9403-233c604f89d1/videos/3f9407c0-2888-11e9-9403-233c604f89d1" target="_blank">Deep Learning with Keras (2hr 3mins)</a></td></tr>
+        <tr><td><input name="Course" id="CB105" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB105">&nbsp;</label></td><td><b>Machine Learning I  </b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$640094:_ss_cca_t:it_aikeradj_01_enus_t56" target="_blank">Machine Learning with Keras (2mins)</a></td></tr>
+        <tr><td><input name="Course" id="CB106" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB106">&nbsp;</label></td><td><b>Machine Learning II</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$525345:_ss_cca_t:sd_exml_a03_it_enus_t4" target="_blank">What is Unsupervised Learning? (Video 2 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB107" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB107">&nbsp;</label></td><td><b>Machine Learning II</b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/560c4ba4-b388-11e7-9c7a-4e99e0664338/videos/560c4ba5-b388-11e7-9c7a-4e99e0664338" target="_blank">Unsupervised Learning (31 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB108" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB108">&nbsp;</label></td><td><b>Machine Learning II</b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/c147dbd7-8f40-430f-b5dd-e420498bdeba/videos/2ac59bbd-e38b-45c1-814c-5cbecb0cb506" target="_blank">Applied Deep Learning: Unsupervised Data (1h32 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB109" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB109">&nbsp;</label></td><td><b>Machine Learning II</b></td>  <td class="link"><a href="https://www.youtube.com/watch?v=edM0_C4j6R0" target="_blank">Deep Learning with Tensorflow - Introduction to Unsupervised Learning (Youtube video 2 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB110" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB110">&nbsp;</label></td><td><b>Machine Learning II</b></td>  <td class="link"><a href="https://www.youtube.com/watch?v=i2DjVin-hk0" target="_blank">Deep Learning with PyTorch: Computer Vision Motivation| packtpub.com (Youtube video 5 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB111" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB111">&nbsp;</label></td><td><b>Google cloud: Architecture, storage and compute options, migrating data to Google cloud</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$506091:_ss_cca:cl_gcpf_a01_it_enus" target="_blank">Google Cloud (1h23min):</a></td></tr>
+        <tr><td><input name="Course" id="CB112" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB112">&nbsp;</label></td><td><b>Google cloud: Architecture, storage and compute options, migrating data to Google cloud</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$536866:_ss_cca:it_clgcar_05_enus" target="_blank">Google Cloud Data Storage (59 min):</a></td></tr>
+        <tr><td><input name="Course" id="CB113" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB113">&nbsp;</label></td><td><b>Google cloud: Architecture, storage and compute options, migrating data to Google cloud</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$506987:_ss_cca_t:cl_gsql_a02_it_enus_t22" target="_blank">Connecting Through Google Cloud Compute (video 4 min):</a></td></tr>
+        </table>
+        <p>
+            &nbsp;
+        </p>
+        <p>
+            &nbsp;
+        </p>
+        <strong>Unit 2 - Statistics</strong><br>
+        <p>
+            &nbsp;
+        </p>
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB68" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB68">&nbsp;</label></td><td><b>Introduction to Descriptive Statistics</b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/cbc01ec0-0f40-11e9-955f-dfb2ccb6c8a7/videos/e899d4f0-0f40-11e9-955f-dfb2ccb6c8a7" target="_blank">Data Science Statistics: Simple Descriptive Statistics (1h14min)</a></td></tr>
+        <tr><td><input name="Course" id="CB69" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB69">&nbsp;</label></td><td><b>Introduction to Descriptive Statistics</b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/55f7d950-b388-11e7-9c7a-4e99e0664338/videos/55f7d951-b388-11e7-9c7a-4e99e0664338" target="_blank">Correlation & Regression (33min)</a></td></tr>
+        <tr><td><input name="Course" id="CB70" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB70">&nbsp;</label></td><td><b>Introduction to Descriptive Statistics</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/RESOURCES/CDE$486129:_ss_ja:oper_40_a02_bs_enus_jaoper_40_a02_bs_enust501" target="_blank">Statistics Tools (job aid)</a></td></tr>
+        <tr><td><input name="Course" id="CB71" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB71">&nbsp;</label></td><td><b>Introduction to Probability</b></td><td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSES/CDE$414084:_ss_cca:oper_26_a02_bs_enus" target="_blank">Basic Probability and Statistical Distributions in Six Sigma (1h42min)</a></td></tr>
+        <tr><td><input name="Course" id="CB72" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB72">&nbsp;</label></td><td><b>Introduction to Probability</b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/RESOURCES/CDE$539378:_ss_ja:apr_03_a02_bs_enus_jaapr_03_a02_bs_enust1201" target="_blank">Probability Formulas (job aid)</a></td></tr>
+        <tr><td><input name="Course" id="CB73" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB73">&nbsp;</label></td><td><b>Conditional probability, Bayes theorem</b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$522959:_ss_cca_t:df_prma_a03_it_enus_t31" target="_blank">Conditional Probability and Bayes Rule (video 5 min)</a></td></tr>
+        <tr><td><input name="Course" id="CB74" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB74">&nbsp;</label></td><td><b>Conditional probability, Bayes theorem</b></td> <td class="link"><a href="https://dxc.percipio.com/courses/929bc62c-033e-4850-9dcd-a6a43a7ee192/videos/717faad5-df6a-4904-ba4b-fe607f1757f8" target="_blank">Bayesian Methods: Bayesian Concepts & Core Components (1h5min)</a></td></tr>
+        <tr><td><input name="Course" id="CB75" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB75">&nbsp;</label></td><td><b>Introduction to inferential statistics, probability distributions</b></td>  <td class="link"><a href="https://dxc.percipio.com/courses/5198b010-0f42-11e9-955f-dfb2ccb6c8a7/videos/97555180-0f42-11e9-955f-dfb2ccb6c8a7" target="_blank">Data Science Statistics: Inferential Statistics (1h6min)</a></td></tr>
+        <tr><td><input name="Course" id="CB76" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB76">&nbsp;</label></td><td><b>Introduction to inferential statistics, probability distributions</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/RESOURCES/CDE$414126:_ss_sb:oper_26_a02_bs_enus_sboper_26_a02_bs_enus051052" target="_blank">Probability Distribution (skillbrief)</a></td></tr>
+        <tr><td><input name="Course" id="CB77" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB77">&nbsp;</label></td><td><b>Missing Value Treatment</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$570645:_ss_cca_t:it_mlfupddj_01_enus_t49" target="_blank">Missing Values and Outlier Management (video 4 min)</a></td></tr>
+        <tr><td><input name="Course" id="CB78" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB78">&nbsp;</label></td><td><b>Missing Value Treatment</b></td><td class="link"><a href="https://dxc.percipio.com/courses/aa5a3440-0f41-11e9-955f-dfb2ccb6c8a7/videos/cace4f40-0f41-11e9-955f-dfb2ccb6c8a7" target="_blank">Data Science Statistics: Common Approaches to Sampling Data (50 min)</a></td></tr>
+        <tr><td><input name="Course" id="CB79" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB79">&nbsp;</label></td><td><b>Feature Engineering</b></td> <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/COURSE_TOPIC/CDE$613387:_ss_cca_t:it_mlmdbpdj_02_enus_t56" target="_blank">Feature Engineering Rules (video 4 min)</a></td></tr>
+        <tr><td><input name="Course" id="CB80" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB80">&nbsp;</label></td><td><b>Feature Engineering</b></td> <td class="link"><a href="https://dxc.percipio.com/courses/07a8b050-2b94-11e8-853f-8d6ca00f7963/videos/48d76530-2b94-11e8-853f-8d6ca00f7963" target="_blank">GCP Engineering and Streaming Architecture (1h15min)</a></td></tr>
+        <tr><td><input name="Course" id="CB81" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB81">&nbsp;</label></td><td><b>Feature Engineering</b></td> <td class="link"><a href="https://www.youtube.com/watch?v=CXDfQdYpGGw" target="_blank">What Is Feature Engineering For Machine Learning? (Youtube 4min)</a></td></tr>
+        <tr><td><input name="Course" id="CB82" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB82">&nbsp;</label></td><td><b>Feature Engineering</b></td>  <td class="link"><a href="https://dxc.skillport.com/skillportfe/main.action#summary/BOOKS/RW$4872968:_ss_book:138735" target="_blank">Feature Engineering for Machine Learning and Data Analytics Book (Chapters 1,2 & 5)</a></td></tr>
+        </table>
+        <p>
+            &nbsp;
+        </p>
+        <p>
+            &nbsp;
+        </p>
+        <strong>Unit 3 - Accelorator - Await contact to complete these modules</strong><br>
+        <p>
+            &nbsp;
+        </p>
+        <table>
+            <tr class="heading">
+              <th></th>
+              <th>Topic</th>
+              <th class="link">Course Link</th>
+            </tr>
+        <tr><td><input name="Course" id="CB189" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB189">&nbsp;</label></td><td><b>Azure Accelerator </b></td> <td><a>Build deploy and test Azure accelorator with ML usecase (1 week)</a></td></tr>
+        <tr><td><input name="Course" id="CB190" type="checkbox" value="ON">&nbsp;&nbsp;<label for="CB190">&nbsp;</label></td><td><b>AWS Accelerator </b></td> <td><a >Build deploy and test AWS accelorator with ML usecase (1 week)</a></td></tr>
+        
+        </table>
+
+        <p>
+            &nbsp;
+        </p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+        <p>
+	&nbsp;
+</p>
+
+    </div>
+    <p>
+        &nbsp;
+    </p>
+
+</div>
+
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<div class="footer">
+    <p>For Queries related to Forms Contact: Erin Dunne or Ryan Sers <br>For any technical difficulties contact ryan.sers@dxc.com <br>       <span>&#169;</span>
+        DXC Technology 2021</p>
+  </div>
+<script src="script.js?1"></script>
+<script src="alertify.min.js"></script>
+</body>
+</html>
